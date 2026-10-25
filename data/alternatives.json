@@ -1,0 +1,345 @@
+{
+  "accuracy_notes": [
+    "The combined pill raises TOTAL cortisol mainly via binding proteins; FREE cortisol is usually not elevated. Do not describe it as raising 'stress hormones'.",
+    "Mood effects of hormonal contraception are an association in observational data; absolute risk is small and individual response varies.",
+    "This tool never advises stopping a medicine. Users are told to discuss changes with a doctor."
+  ],
+  "methods": [
+    {
+      "id": "copper_iud",
+      "method": "Copper IUD (non-hormonal)",
+      "goals": [
+        "contraception",
+        "heavy_bleeding"
+      ],
+      "typical_use_failure_pct": 0.8,
+      "reliability_note": null,
+      "mood_evidence": "Non-hormonal, so no direct hormonal mood mechanism. Direct mood studies are limited.",
+      "tradeoffs": "Can make periods heavier or more painful, especially at first. Needs a clinician to insert.",
+      "evidence_levels": {
+        "efficacy_data": 3,
+        "mood_data": 1
+      },
+      "evidence_score": 73,
+      "goal_fit": {
+        "contraception": 3,
+        "heavy_bleeding": 0
+      },
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "lng_iud",
+      "method": "Hormonal IUD (levonorgestrel)",
+      "goals": [
+        "contraception",
+        "heavy_bleeding"
+      ],
+      "typical_use_failure_pct": 0.1,
+      "reliability_note": "CDC lists 0.1-0.4% typical-use failure; verify exact figure.",
+      "mood_evidence": "In the large Danish cohort, hormonal methods incl. the hormonal IUD were associated with later antidepressant use; this is an association, absolute risk is small, and response varies.",
+      "tradeoffs": "Often greatly reduces bleeding. Needs a clinician to insert; spotting is common early on.",
+      "evidence_levels": {
+        "efficacy_data": 3,
+        "mood_data": 2
+      },
+      "evidence_score": 87,
+      "goal_fit": {
+        "contraception": 3,
+        "heavy_bleeding": 3
+      },
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception",
+        "https://womensmentalhealth.org/posts/11202/"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "implant",
+      "method": "Contraceptive implant",
+      "goals": [
+        "contraception"
+      ],
+      "typical_use_failure_pct": 0.1,
+      "reliability_note": null,
+      "mood_evidence": "Progestin-only; mood evidence is mixed and limited. Individual response varies.",
+      "tradeoffs": "Bleeding pattern can be unpredictable. Needs a clinician to insert and remove.",
+      "evidence_levels": {
+        "efficacy_data": 3,
+        "mood_data": 1
+      },
+      "evidence_score": 73,
+      "goal_fit": {
+        "contraception": 3
+      },
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "cocp",
+      "method": "Combined pill (oestrogen + progestin)",
+      "goals": [
+        "contraception",
+        "pcos",
+        "acne",
+        "heavy_bleeding"
+      ],
+      "typical_use_failure_pct": 7,
+      "reliability_note": null,
+      "mood_evidence": "Associated with later antidepressant use and depression diagnoses in a Danish cohort of >1M women, especially in adolescents (association, small absolute risk). Many women notice no change, so personal tracking matters.",
+      "tradeoffs": "Needs daily adherence. Small increase in clot risk; not suitable for everyone (e.g. migraine with aura). Often reduces cramps, acne and bleeding.",
+      "evidence_levels": {
+        "efficacy_data": 3,
+        "mood_data": 3
+      },
+      "evidence_score": 100,
+      "goal_fit": {
+        "contraception": 2,
+        "pcos": 3,
+        "acne": 3,
+        "heavy_bleeding": 2
+      },
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception",
+        "https://womensmentalhealth.org/posts/11202/"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "pop",
+      "method": "Progestin-only pill",
+      "goals": [
+        "contraception"
+      ],
+      "typical_use_failure_pct": 7,
+      "reliability_note": null,
+      "mood_evidence": "Evidence on mood is limited and mixed.",
+      "tradeoffs": "Needs very regular timing; irregular bleeding is common. Suitable when oestrogen is not.",
+      "evidence_levels": {
+        "efficacy_data": 2,
+        "mood_data": 1
+      },
+      "evidence_score": 60,
+      "goal_fit": {
+        "contraception": 2
+      },
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "injectable",
+      "method": "Injectable (DMPA)",
+      "goals": [
+        "contraception"
+      ],
+      "typical_use_failure_pct": 4,
+      "reliability_note": null,
+      "mood_evidence": "Associated with mood changes in some observational data; evidence mixed.",
+      "tradeoffs": "Return of fertility can be delayed; long-term use is linked to reduced bone density.",
+      "evidence_levels": {
+        "efficacy_data": 2,
+        "mood_data": 1
+      },
+      "evidence_score": 60,
+      "goal_fit": {
+        "contraception": 1
+      },
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "condom",
+      "method": "Condoms / barrier methods",
+      "goals": [
+        "contraception"
+      ],
+      "typical_use_failure_pct": 13,
+      "reliability_note": "Male condom ~13% typical-use failure (CDC); verify.",
+      "mood_evidence": "No hormonal effect; no mood link expected.",
+      "tradeoffs": "Lower typical-use reliability than long-acting methods; protects against STIs.",
+      "evidence_levels": {
+        "efficacy_data": 2,
+        "mood_data": 0
+      },
+      "evidence_score": 47,
+      "goal_fit": {
+        "contraception": 2
+      },
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "fam",
+      "method": "Fertility-awareness methods",
+      "goals": [
+        "contraception"
+      ],
+      "typical_use_failure_pct": null,
+      "reliability_note": "CDC range is wide by method; verify.",
+      "mood_evidence": "No hormonal effect.",
+      "tradeoffs": "Typical-use failure varies widely (roughly 2-23% depending on method); needs consistent tracking and training.",
+      "evidence_levels": {
+        "efficacy_data": 1,
+        "mood_data": 0
+      },
+      "evidence_score": 13,
+      "goal_fit": {
+        "contraception": 1
+      },
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "lifestyle_pcos",
+      "method": "Lifestyle approaches (activity, nutrition, sleep)",
+      "goals": [
+        "pcos"
+      ],
+      "typical_use_failure_pct": null,
+      "reliability_note": null,
+      "mood_evidence": "Can help mood and metabolic markers in PCOS; individual results vary.",
+      "tradeoffs": "Needs sustained effort; effects build gradually. Recommended as part of care for everyone with PCOS.",
+      "evidence_levels": {
+        "efficacy_data": 3,
+        "mood_data": 2
+      },
+      "evidence_score": 67,
+      "goal_fit": {
+        "pcos": 3
+      },
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "inositol",
+      "method": "Inositol supplements",
+      "goals": [
+        "pcos"
+      ],
+      "typical_use_failure_pct": null,
+      "reliability_note": null,
+      "mood_evidence": "Evidence limited and mixed.",
+      "tradeoffs": "Evidence for benefit is weaker and less consistent than for lifestyle or medicines; products vary.",
+      "evidence_levels": {
+        "efficacy_data": 1,
+        "mood_data": 0
+      },
+      "evidence_score": 13,
+      "goal_fit": {
+        "pcos": 1
+      },
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=inositol+PCOS"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "metformin",
+      "method": "Metformin",
+      "goals": [
+        "pcos"
+      ],
+      "typical_use_failure_pct": null,
+      "reliability_note": null,
+      "mood_evidence": "Evidence on mood is limited.",
+      "tradeoffs": "Mainly helps metabolic features; gut side effects are common. Prescription only.",
+      "evidence_levels": {
+        "efficacy_data": 2,
+        "mood_data": 0
+      },
+      "evidence_score": 27,
+      "goal_fit": {
+        "pcos": 2
+      },
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin+PCOS+guideline"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "antiandrogen",
+      "method": "Anti-androgens (e.g. spironolactone)",
+      "goals": [
+        "pcos",
+        "acne"
+      ],
+      "typical_use_failure_pct": null,
+      "reliability_note": null,
+      "mood_evidence": "Limited mood data.",
+      "tradeoffs": "Needs reliable contraception (risk to a developing baby); prescription only; monitoring may be needed.",
+      "evidence_levels": {
+        "efficacy_data": 2,
+        "mood_data": 0
+      },
+      "evidence_score": 27,
+      "goal_fit": {
+        "pcos": 2,
+        "acne": 2
+      },
+      "sources": [
+        "https://www.nhs.uk/conditions/acne/"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "topical_acne",
+      "method": "Topical treatments (benzoyl peroxide, azelaic acid)",
+      "goals": [
+        "acne"
+      ],
+      "typical_use_failure_pct": null,
+      "reliability_note": null,
+      "mood_evidence": "No hormonal mood mechanism.",
+      "tradeoffs": "Can irritate skin; takes weeks to work. Check with a clinician about which topicals suit pregnancy plans.",
+      "evidence_levels": {
+        "efficacy_data": 2,
+        "mood_data": 0
+      },
+      "evidence_score": 27,
+      "goal_fit": {
+        "acne": 2
+      },
+      "sources": [
+        "https://www.nhs.uk/conditions/acne/"
+      ],
+      "verification_status": "needs_review"
+    },
+    {
+      "id": "tranexamic",
+      "method": "Tranexamic acid",
+      "goals": [
+        "heavy_bleeding"
+      ],
+      "typical_use_failure_pct": null,
+      "reliability_note": null,
+      "mood_evidence": "Non-hormonal; no mood link expected.",
+      "tradeoffs": "Taken only during bleeding days; not suitable with a clot history.",
+      "evidence_levels": {
+        "efficacy_data": 2,
+        "mood_data": 0
+      },
+      "evidence_score": 27,
+      "goal_fit": {
+        "heavy_bleeding": 2
+      },
+      "sources": [
+        "https://www.nhs.uk/conditions/heavy-periods/"
+      ],
+      "verification_status": "needs_review"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+module,subject,claim,source,status
+Module 2,Heart attack (myocardial infarction),Textbook: Crushing chest pain,https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Heart attack (myocardial infarction),Textbook: Pain spreading to the left arm,https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Heart attack (myocardial infarction),Textbook: Sweating,https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Heart attack (myocardial infarction),Female presentation: May have little or no chest pain,https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Heart attack (myocardial infarction),"Female presentation: Jaw, neck or upper-back pain",https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Heart attack (myocardial infarction),Female presentation: Nausea or vomiting,https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Heart attack (myocardial infarction),Female presentation: Shortness of breath,https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Heart attack (myocardial infarction),Female presentation: Unusual fatigue,https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Heart attack (myocardial infarction),Female presentation: Light-headedness,https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Heart attack (myocardial infarction),Often-skipped test: High-sensitivity troponin with sex-specific cut-offs,https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Heart attack (myocardial infarction),Often-skipped test: Repeat/serial ECG,https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women; https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women,needs_review
+Module 2,Stroke,Textbook: Face drooping,https://www.nhs.uk/conditions/stroke/,needs_review
+Module 2,Stroke,Textbook: Arm weakness,https://www.nhs.uk/conditions/stroke/,needs_review
+Module 2,Stroke,Textbook: Speech difficulty,https://www.nhs.uk/conditions/stroke/,needs_review
+Module 2,Stroke,"Female presentation: Non-classic symptoms such as confusion, headache, nausea or general weakness",https://www.nhs.uk/conditions/stroke/,needs_review
+Module 2,Stroke,Female presentation: Fatigue or fainting,https://www.nhs.uk/conditions/stroke/,needs_review
+Module 2,Stroke,Often-skipped test: Urgent brain imaging (CT/MRI),https://www.nhs.uk/conditions/stroke/,needs_review
+Module 2,Stroke,Often-skipped test: Stroke assessment even without classic signs,https://www.nhs.uk/conditions/stroke/,needs_review
+Module 2,ADHD (inattentive presentation),Textbook: Hyperactivity,https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/,needs_review
+Module 2,ADHD (inattentive presentation),Textbook: Disruptive behaviour,https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/,needs_review
+Module 2,ADHD (inattentive presentation),Textbook: Impulsivity (classically described in boys),https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/,needs_review
+Module 2,ADHD (inattentive presentation),"Female presentation: Inattention, daydreaming, disorganisation",https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/,needs_review
+Module 2,ADHD (inattentive presentation),Female presentation: Internal restlessness,https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/,needs_review
+Module 2,ADHD (inattentive presentation),"Female presentation: Anxiety, low mood, emotional overwhelm",https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/,needs_review
+Module 2,ADHD (inattentive presentation),Female presentation: Burnout or exhaustion from compensating,https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/,needs_review
+Module 2,ADHD (inattentive presentation),"Often-skipped test: Structured adult/child ADHD assessment (e.g. DIVA-5, ASRS)",https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/,needs_review
+Module 2,ADHD (inattentive presentation),Often-skipped test: Review of childhood history,https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/,needs_review
+Module 2,ADHD (inattentive presentation),Often-skipped test: Screening for inattentive-type presentation,https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/,needs_review
+Module 2,Autism (often under-recognised in women),Textbook: Visible social-communication difficulty,https://www.nhs.uk/conditions/autism/,needs_review
+Module 2,Autism (often under-recognised in women),Textbook: Repetitive behaviours,https://www.nhs.uk/conditions/autism/,needs_review
+Module 2,Autism (often under-recognised in women),Textbook: Restricted interests,https://www.nhs.uk/conditions/autism/,needs_review
+Module 2,Autism (often under-recognised in women),Female presentation: Masking / camouflaging,https://www.nhs.uk/conditions/autism/,needs_review
+Module 2,Autism (often under-recognised in women),Female presentation: Social exhaustion,https://www.nhs.uk/conditions/autism/,needs_review
+Module 2,Autism (often under-recognised in women),Female presentation: Sensory sensitivities,https://www.nhs.uk/conditions/autism/,needs_review
+Module 2,Autism (often under-recognised in women),"Female presentation: Distress turned inward (anxiety, low mood)",https://www.nhs.uk/conditions/autism/,needs_review
+Module 2,Autism (often under-recognised in women),Often-skipped test: Specialist autism assessment using tools validated for women,https://www.nhs.uk/conditions/autism/,needs_review
+Module 2,Autism (often under-recognised in women),Often-skipped test: Review of developmental history,https://www.nhs.uk/conditions/autism/,needs_review
+Module 2,Endometriosis,Textbook: Painful periods,https://www.nhs.uk/conditions/endometriosis/,needs_review
+Module 2,Endometriosis,Female presentation: Chronic pelvic pain,https://www.nhs.uk/conditions/endometriosis/,needs_review
+Module 2,Endometriosis,Female presentation: Pain during sex,https://www.nhs.uk/conditions/endometriosis/,needs_review
+Module 2,Endometriosis,Female presentation: Bowel or bladder symptoms around periods,https://www.nhs.uk/conditions/endometriosis/,needs_review
+Module 2,Endometriosis,Female presentation: Fatigue,https://www.nhs.uk/conditions/endometriosis/,needs_review
+Module 2,Endometriosis,Female presentation: Difficulty conceiving,https://www.nhs.uk/conditions/endometriosis/,needs_review
+Module 2,Endometriosis,Often-skipped test: Transvaginal or pelvic ultrasound by an experienced operator,https://www.nhs.uk/conditions/endometriosis/,needs_review
+Module 2,Endometriosis,Often-skipped test: Pelvic MRI,https://www.nhs.uk/conditions/endometriosis/,needs_review
+Module 2,Endometriosis,Often-skipped test: Referral to a specialist (laparoscopy considered),https://www.nhs.uk/conditions/endometriosis/,needs_review
+Module 2,Lupus (systemic lupus erythematosus),Textbook: Butterfly-shaped facial rash,https://www.nhs.uk/conditions/lupus/,needs_review
+Module 2,Lupus (systemic lupus erythematosus),Textbook: Joint pain,https://www.nhs.uk/conditions/lupus/,needs_review
+Module 2,Lupus (systemic lupus erythematosus),Female presentation: Persistent fatigue,https://www.nhs.uk/conditions/lupus/,needs_review
+Module 2,Lupus (systemic lupus erythematosus),Female presentation: Joint pain and swelling,https://www.nhs.uk/conditions/lupus/,needs_review
+Module 2,Lupus (systemic lupus erythematosus),Female presentation: Low-grade fever,https://www.nhs.uk/conditions/lupus/,needs_review
+Module 2,Lupus (systemic lupus erythematosus),Female presentation: Hair loss and mouth ulcers,https://www.nhs.uk/conditions/lupus/,needs_review
+Module 2,Lupus (systemic lupus erythematosus),Female presentation: Sun sensitivity,https://www.nhs.uk/conditions/lupus/,needs_review
+Module 2,Lupus (systemic lupus erythematosus),Often-skipped test: ANA blood test,https://www.nhs.uk/conditions/lupus/,needs_review
+Module 2,Lupus (systemic lupus erythematosus),Often-skipped test: Anti-dsDNA and complement levels,https://www.nhs.uk/conditions/lupus/,needs_review
+Module 2,Lupus (systemic lupus erythematosus),Often-skipped test: Urine test for kidney involvement,https://www.nhs.uk/conditions/lupus/,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Textbook: Irregular periods,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Textbook: Excess hair growth,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Female presentation: Irregular or absent periods,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Female presentation: Acne,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Female presentation: Excess facial/body hair,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Female presentation: Weight gain,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Female presentation: Hair thinning,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Female presentation: Difficulty conceiving,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Female presentation: Low mood or anxiety,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),"Often-skipped test: Hormone blood tests (e.g. testosterone, SHBG)",https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Often-skipped test: Pelvic ultrasound,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Polycystic ovary syndrome (PCOS),Often-skipped test: Glucose / HbA1c screening,https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/; https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Textbook: Tiredness,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Textbook: Weight gain,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Textbook: Feeling cold,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Female presentation: Fatigue,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Female presentation: Hair loss,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Female presentation: Heavy or irregular periods,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Female presentation: Low mood,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Female presentation: Dry skin,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Female presentation: Memory fog,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Often-skipped test: TSH,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Often-skipped test: Free T4,https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Underactive thyroid (hypothyroidism),Often-skipped test: Thyroid antibodies (TPO),https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/,needs_review
+Module 2,Iron deficiency / anaemia,Textbook: Tiredness,https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 2,Iron deficiency / anaemia,Textbook: Pale skin,https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 2,Iron deficiency / anaemia,Female presentation: Fatigue,https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 2,Iron deficiency / anaemia,Female presentation: Hair loss,https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 2,Iron deficiency / anaemia,Female presentation: Brittle nails,https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 2,Iron deficiency / anaemia,Female presentation: Restless legs,https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 2,Iron deficiency / anaemia,Female presentation: Breathlessness on exertion,https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 2,Iron deficiency / anaemia,Female presentation: Heavy periods as a common cause,https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 2,Iron deficiency / anaemia,Often-skipped test: Ferritin (not only haemoglobin),https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 2,Iron deficiency / anaemia,Often-skipped test: Transferrin saturation,https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 2,Iron deficiency / anaemia,Often-skipped test: Full blood count,https://www.nhs.uk/conditions/iron-deficiency-anaemia/,needs_review
+Module 4,Copper IUD (non-hormonal),Typical-use failure %: 0.8,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Copper IUD (non-hormonal),"Mood evidence: Non-hormonal, so no direct hormonal mood mechanism. Direct mood studies are limited.",https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Hormonal IUD (levonorgestrel),Typical-use failure %: 0.1,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception; https://womensmentalhealth.org/posts/11202/,needs_review
+Module 4,Hormonal IUD (levonorgestrel),"Mood evidence: In the large Danish cohort, hormonal methods incl. the hormonal IUD were associated with later antidepressant use; this is an association, absolute risk is small, and response varies.",https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception; https://womensmentalhealth.org/posts/11202/,needs_review
+Module 4,Contraceptive implant,Typical-use failure %: 0.1,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Contraceptive implant,Mood evidence: Progestin-only; mood evidence is mixed and limited. Individual response varies.,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Combined pill (oestrogen + progestin),Typical-use failure %: 7,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception; https://womensmentalhealth.org/posts/11202/,needs_review
+Module 4,Combined pill (oestrogen + progestin),"Mood evidence: Associated with later antidepressant use and depression diagnoses in a Danish cohort of >1M women, especially in adolescents (association, small absolute risk). Many women notice no change, so personal tracking matters.",https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception; https://womensmentalhealth.org/posts/11202/,needs_review
+Module 4,Progestin-only pill,Typical-use failure %: 7,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Progestin-only pill,Mood evidence: Evidence on mood is limited and mixed.,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Injectable (DMPA),Typical-use failure %: 4,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Injectable (DMPA),Mood evidence: Associated with mood changes in some observational data; evidence mixed.,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Condoms / barrier methods,Typical-use failure %: 13,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Condoms / barrier methods,Mood evidence: No hormonal effect; no mood link expected.,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Fertility-awareness methods,Typical-use failure %: None,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,Fertility-awareness methods,Mood evidence: No hormonal effect.,https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception,needs_review
+Module 4,"Lifestyle approaches (activity, nutrition, sleep)",Typical-use failure %: None,https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 4,"Lifestyle approaches (activity, nutrition, sleep)",Mood evidence: Can help mood and metabolic markers in PCOS; individual results vary.,https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome,needs_review
+Module 4,Inositol supplements,Typical-use failure %: None,https://pubmed.ncbi.nlm.nih.gov/?term=inositol+PCOS,needs_review
+Module 4,Inositol supplements,Mood evidence: Evidence limited and mixed.,https://pubmed.ncbi.nlm.nih.gov/?term=inositol+PCOS,needs_review
+Module 4,Metformin,Typical-use failure %: None,https://pubmed.ncbi.nlm.nih.gov/?term=metformin+PCOS+guideline,needs_review
+Module 4,Metformin,Mood evidence: Evidence on mood is limited.,https://pubmed.ncbi.nlm.nih.gov/?term=metformin+PCOS+guideline,needs_review
+Module 4,Anti-androgens (e.g. spironolactone),Typical-use failure %: None,https://www.nhs.uk/conditions/acne/,needs_review
+Module 4,Anti-androgens (e.g. spironolactone),Mood evidence: Limited mood data.,https://www.nhs.uk/conditions/acne/,needs_review
+Module 4,"Topical treatments (benzoyl peroxide, azelaic acid)",Typical-use failure %: None,https://www.nhs.uk/conditions/acne/,needs_review
+Module 4,"Topical treatments (benzoyl peroxide, azelaic acid)",Mood evidence: No hormonal mood mechanism.,https://www.nhs.uk/conditions/acne/,needs_review
+Module 4,Tranexamic acid,Typical-use failure %: None,https://www.nhs.uk/conditions/heavy-periods/,needs_review
+Module 4,Tranexamic acid,Mood evidence: Non-hormonal; no mood link expected.,https://www.nhs.uk/conditions/heavy-periods/,needs_review
+Module 1/3,zolpidem,Data origin: demo_seed,https://clinicaltrials.gov/search?intr=zolpidem; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=zolpidem+pregnancy; https://news.berkeley.edu/2020/08/12/lack-of-females-in-drug-dose-trials-leads-toovermedicated-women/,REPLACE demo_seed via pipeline
+Module 3,zolpidem,FDA lowered the recommended starting dose for women in 2013 after evidence of higher next-morning blood levels.,https://clinicaltrials.gov/search?intr=zolpidem; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=zolpidem+pregnancy; https://news.berkeley.edu/2020/08/12/lack-of-females-in-drug-dose-trials-leads-toovermedicated-women/,needs_review
+Module 1/3,sertraline,Data origin: demo_seed,https://clinicaltrials.gov/search?intr=sertraline; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=sertraline+pregnancy,REPLACE demo_seed via pipeline
+Module 1/3,isotretinoin,Data origin: demo_seed,https://clinicaltrials.gov/search?intr=isotretinoin; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=isotretinoin+pregnancy,REPLACE demo_seed via pipeline
+Module 1/3,valproate,Data origin: demo_seed,https://clinicaltrials.gov/search?intr=valproate; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=valproate+pregnancy,REPLACE demo_seed via pipeline
+Module 1/3,ibuprofen,Data origin: demo_seed,https://clinicaltrials.gov/search?intr=ibuprofen; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=ibuprofen+pregnancy,REPLACE demo_seed via pipeline
+Module 1/3,metformin,Data origin: demo_seed,https://clinicaltrials.gov/search?intr=metformin; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=metformin+pregnancy,REPLACE demo_seed via pipeline
+Module 1/3,levothyroxine,Data origin: demo_seed,https://clinicaltrials.gov/search?intr=levothyroxine; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=levothyroxine+pregnancy,REPLACE demo_seed via pipeline
+Module 1/3,amlodipine,Data origin: demo_seed,https://clinicaltrials.gov/search?intr=amlodipine; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=amlodipine+pregnancy,REPLACE demo_seed via pipeline
+Module 1/3,atorvastatin,Data origin: demo_seed,https://clinicaltrials.gov/search?intr=atorvastatin; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=atorvastatin+pregnancy,REPLACE demo_seed via pipeline
+Module 1/3,levonorgestrel and ethinylestradiol,Data origin: demo_seed,https://clinicaltrials.gov/search?intr=levonorgestrel and ethinylestradiol; https://open.fda.gov/apis/drug/label/; https://pubmed.ncbi.nlm.nih.gov/?term=levonorgestrel+and+ethinylestradiol+pregnancy,REPLACE demo_seed via pipeline
+Module 3,ccb_diuretic,"A calcium-channel blocker can cause ankle swelling, which may be mistaken for a new problem and treated with a diuretic.",https://pubmed.ncbi.nlm.nih.gov/?term=prescribing+cascade+calcium+channel+blocker+loop+diuretic,needs_review
+Module 3,nsaid_bp,"NSAIDs can raise blood pressure, which may then be treated with a blood-pressure medicine.",https://pubmed.ncbi.nlm.nih.gov/?term=prescribing+cascade+NSAID+antihypertensive,needs_review
+Module 3,metoclopramide_levodopa,Metoclopramide can cause parkinsonism-like symptoms that may be mistaken for Parkinson's disease.,https://pubmed.ncbi.nlm.nih.gov/?term=prescribing+cascade+metoclopramide+parkinsonism,needs_review
+Module 3,chei_anticholinergic,"Cholinesterase inhibitors can cause urinary urgency, which may be treated with a bladder anticholinergic.",https://pubmed.ncbi.nlm.nih.gov/?term=prescribing+cascade+cholinesterase+inhibitor+anticholinergic,needs_review
+Module 3,steroid_diabetes,"Corticosteroids can raise blood sugar, which may then be treated with diabetes medicines.",https://pubmed.ncbi.nlm.nih.gov/?term=prescribing+cascade+corticosteroid+hyperglycemia,needs_review

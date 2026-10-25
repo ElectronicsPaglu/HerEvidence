@@ -1,0 +1,83 @@
+generic,class,aliases
+sertraline,Antidepressant (SSRI),zoloft;serlift
+fluoxetine,Antidepressant (SSRI),prozac;fluox
+escitalopram,Antidepressant (SSRI),lexapro;nexito
+citalopram,Antidepressant (SSRI),celexa
+paroxetine,Antidepressant (SSRI),paxil;pexep
+venlafaxine,Antidepressant (SNRI),effexor
+duloxetine,Antidepressant (SNRI),cymbalta
+bupropion,Antidepressant,wellbutrin
+mirtazapine,Antidepressant,remeron
+amitriptyline,Antidepressant (tricyclic),elavil
+trazodone,Antidepressant,desyrel
+alprazolam,Anti-anxiety (benzodiazepine),xanax
+clonazepam,Anti-seizure / anti-anxiety (benzodiazepine),klonopin;rivotril
+diazepam,Benzodiazepine,valium
+zolpidem,Sleep medicine (sedative-hypnotic),ambien;stilnoct
+quetiapine,Antipsychotic,seroquel
+olanzapine,Antipsychotic,zyprexa
+aripiprazole,Antipsychotic,abilify
+risperidone,Antipsychotic,risperdal
+lithium carbonate,Mood stabiliser,lithium
+lamotrigine,Anti-seizure / mood stabiliser,lamictal
+levetiracetam,Anti-seizure,keppra
+topiramate,Anti-seizure / migraine prevention,topamax
+carbamazepine,Anti-seizure,tegretol
+valproic acid,Anti-seizure / mood stabiliser,valproate;depakote;epilim
+gabapentin,Nerve pain / anti-seizure,neurontin
+pregabalin,Nerve pain / anti-seizure,lyrica
+methylphenidate,ADHD stimulant,ritalin;concerta
+atomoxetine,ADHD non-stimulant,strattera
+amphetamine,ADHD stimulant,adderall
+sumatriptan,Migraine (triptan),imitrex
+propranolol,Beta blocker,inderal
+ibuprofen,Pain reliever (NSAID),advil;brufen;motrin
+naproxen,Pain reliever (NSAID),aleve;naprosyn
+diclofenac,Pain reliever (NSAID),voltaren
+aspirin,Pain reliever / antiplatelet,ecosprin;disprin
+acetaminophen,Pain reliever,paracetamol;tylenol;crocin;dolo
+tramadol,Opioid pain reliever,ultram
+isotretinoin,Acne medicine (retinoid),accutane;roaccutane
+doxycycline,Antibiotic (tetracycline),vibramycin
+amoxicillin,Antibiotic (penicillin),amoxil;mox
+azithromycin,Antibiotic (macrolide),zithromax;azee
+ciprofloxacin,Antibiotic (fluoroquinolone),cipro
+metronidazole,Antibiotic / antiparasitic,flagyl
+fluconazole,Antifungal,diflucan
+omeprazole,Acid reducer (PPI),prilosec;omez
+pantoprazole,Acid reducer (PPI),protonix;pan
+ondansetron,Anti-nausea,zofran;ondem
+metoclopramide,Anti-nausea / gut motility,reglan;perinorm
+cetirizine,Antihistamine,zyrtec
+loratadine,Antihistamine,claritin
+montelukast,Asthma / allergy,singulair
+albuterol,Asthma reliever,salbutamol;ventolin
+prednisone,Corticosteroid,prednisolone;deltasone
+metformin,Diabetes medicine (biguanide),glucophage;glycomet
+sitagliptin,Diabetes medicine (DPP-4),januvia
+glimepiride,Diabetes medicine (sulfonylurea),amaryl
+levothyroxine,Thyroid hormone,synthroid;thyronorm;eltroxin
+amlodipine,Blood pressure medicine (calcium channel blocker),norvasc;amlip
+lisinopril,Blood pressure medicine (ACE inhibitor),prinivil;zestril
+losartan,Blood pressure medicine (ARB),cozaar;losar
+metoprolol,Beta blocker,lopressor;metolar
+atenolol,Beta blocker,tenormin
+hydrochlorothiazide,Diuretic,hctz
+furosemide,Diuretic (loop),lasix
+spironolactone,Diuretic / anti-androgen,aldactone
+atorvastatin,Cholesterol medicine (statin),lipitor;atorva
+simvastatin,Cholesterol medicine (statin),zocor
+rosuvastatin,Cholesterol medicine (statin),crestor
+clopidogrel,Blood thinner (antiplatelet),plavix
+warfarin,Blood thinner,coumadin
+tranexamic acid,Heavy-bleeding medicine,cyklokapron;pause
+norethindrone,Progestin (contraceptive / hormone),norethisterone
+medroxyprogesterone,Progestin (injectable / hormone),depo-provera
+estradiol,Oestrogen hormone,estrace
+levonorgestrel and ethinyl estradiol,Combined oral contraceptive (the pill),combined pill;the pill;coc;cocp;combined oral contraceptive;alesse;levonorgestrel and ethinylestradiol
+drospirenone and ethinyl estradiol,Combined oral contraceptive (the pill),yaz;yasmin
+letrozole,Fertility / breast cancer medicine,femara
+clomiphene,Fertility medicine,clomid
+misoprostol,Prostaglandin (obstetric use),cytotec
+methotrexate,Immunosuppressant / chemotherapy,trexall
+hydroxychloroquine,Antimalarial / autoimmune medicine,plaquenil;hcqs

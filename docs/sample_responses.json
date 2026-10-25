@@ -1,0 +1,704 @@
+{
+  "GET_drug_zolpidem": {
+    "name": "zolpidem",
+    "drugClass": "Sleep medicine (sedative-hypnotic)",
+    "aliases": [
+      "ambien",
+      "stilnoct"
+    ],
+    "evidenceScore": 36,
+    "evidenceLabel": "Moderate evidence in women",
+    "components": {
+      "pregnancy": 0.116,
+      "breastfeeding": 0.12,
+      "sex_specific": 0.712
+    },
+    "scoreNote": "This score reflects how much evidence exists for women. It is not a safety rating.",
+    "pregnancyData": {
+      "score": 0.116,
+      "summary": "In the 180 registered trials found, about 88% of sampled trials listed pregnancy as an exclusion; 2 trials were found that studied pregnancy.",
+      "trialsStudyingPregnancy": 2,
+      "trialsSampledExcludingPregnancyPct": 88,
+      "labelHasHumanData": false,
+      "labelNote": "See the official label's pregnancy section for current wording."
+    },
+    "breastfeedingData": {
+      "score": 0.12,
+      "summary": "No lactation information found in the label data we hold.",
+      "labelHasLactationData": false,
+      "papers": 6
+    },
+    "sexSpecificData": {
+      "score": 0.712,
+      "summary": "About 38% of participants in trials with posted results were women. Sex-specific dosing information exists.",
+      "femaleEnrollmentPct": 38,
+      "dosingNote": "FDA lowered the recommended starting dose for women in 2013 after evidence of higher next-morning blood levels."
+    },
+    "sexSpecificEffects": [
+      {
+        "reaction": "FATIGUE",
+        "female_count": 520,
+        "male_count": 250,
+        "female_share": 0.675
+      },
+      {
+        "reaction": "NAUSEA",
+        "female_count": 380,
+        "male_count": 200,
+        "female_share": 0.655
+      },
+      {
+        "reaction": "AMNESIA",
+        "female_count": 520,
+        "male_count": 300,
+        "female_share": 0.634
+      },
+      {
+        "reaction": "DIZZINESS",
+        "female_count": 700,
+        "male_count": 430,
+        "female_share": 0.619
+      },
+      {
+        "reaction": "SOMNOLENCE",
+        "female_count": 800,
+        "male_count": 520,
+        "female_share": 0.606
+      },
+      {
+        "reaction": "HEADACHE",
+        "female_count": 400,
+        "male_count": 290,
+        "female_share": 0.58
+      }
+    ],
+    "faersFemaleSharePct": 60,
+    "alternatives": [],
+    "sources": [
+      "https://clinicaltrials.gov/search?intr=zolpidem",
+      "https://open.fda.gov/apis/drug/label/",
+      "https://pubmed.ncbi.nlm.nih.gov/?term=zolpidem+pregnancy",
+      "https://news.berkeley.edu/2020/08/12/lack-of-females-in-drug-dose-trials-leads-toovermedicated-women/"
+    ],
+    "dataOrigin": "demo_seed",
+    "dataOriginNote": "Illustrative demo values.",
+    "disclaimer": "Decision support, not medical advice. Never stop a prescribed medicine without talking to your doctor."
+  },
+  "GET_drug_pill": {
+    "name": "levonorgestrel and ethinylestradiol",
+    "drugClass": "Combined oral contraceptive (the pill)",
+    "aliases": [
+      "combined pill",
+      "the pill",
+      "coc",
+      "cocp",
+      "combined oral contraceptive",
+      "alesse",
+      "drospirenone and ethinylestradiol",
+      "yaz"
+    ],
+    "evidenceScore": 62,
+    "evidenceLabel": "Moderate evidence in women",
+    "components": {
+      "pregnancy": 0.39,
+      "breastfeeding": 1.0,
+      "sex_specific": 0.67
+    },
+    "scoreNote": "This score reflects how much evidence exists for women. It is not a safety rating.",
+    "pregnancyData": {
+      "score": 0.39,
+      "summary": "In the 380 registered trials found, about 70% of sampled trials listed pregnancy as an exclusion; 0 trials were found that studied pregnancy.",
+      "trialsStudyingPregnancy": 0,
+      "trialsSampledExcludingPregnancyPct": 70,
+      "labelHasHumanData": true,
+      "labelNote": "Not used in pregnancy; contraceptive use is the intended purpose. Check the label for use while breastfeeding."
+    },
+    "breastfeedingData": {
+      "score": 1.0,
+      "summary": "The label contains lactation information.",
+      "labelHasLactationData": true,
+      "papers": 40
+    },
+    "sexSpecificData": {
+      "score": 0.67,
+      "summary": "About 100% of participants in trials with posted results were women. No sex-specific dosing information found.",
+      "femaleEnrollmentPct": 100,
+      "dosingNote": null
+    },
+    "sexSpecificEffects": [
+      {
+        "reaction": "WEIGHT INCREASED",
+        "female_count": 450,
+        "male_count": 2,
+        "female_share": 0.996
+      },
+      {
+        "reaction": "MOOD SWINGS",
+        "female_count": 500,
+        "male_count": 3,
+        "female_share": 0.994
+      },
+      {
+        "reaction": "NAUSEA",
+        "female_count": 800,
+        "male_count": 6,
+        "female_share": 0.993
+      },
+      {
+        "reaction": "DEPRESSION",
+        "female_count": 600,
+        "male_count": 4,
+        "female_share": 0.993
+      },
+      {
+        "reaction": "FATIGUE",
+        "female_count": 400,
+        "male_count": 3,
+        "female_share": 0.993
+      },
+      {
+        "reaction": "HEADACHE",
+        "female_count": 900,
+        "male_count": 8,
+        "female_share": 0.991
+      }
+    ],
+    "faersFemaleSharePct": 99,
+    "alternatives": [
+      {
+        "id": "lng_iud",
+        "method": "Hormonal IUD (levonorgestrel)",
+        "typical_use_failure_pct": 0.1,
+        "reliability_note": "CDC lists 0.1-0.4% typical-use failure; verify exact figure.",
+        "mood_evidence": "In the large Danish cohort, hormonal methods incl. the hormonal IUD were associated with later antidepressant use; this is an association, absolute risk is small, and response varies.",
+        "tradeoffs": "Often greatly reduces bleeding. Needs a clinician to insert; spotting is common early on.",
+        "evidence_levels": {
+          "efficacy_data": 3,
+          "mood_data": 2
+        },
+        "evidence_score": 87,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception",
+          "https://womensmentalhealth.org/posts/11202/"
+        ],
+        "verification_status": "needs_review",
+        "rank": 1,
+        "goalFit": 3
+      },
+      {
+        "id": "implant",
+        "method": "Contraceptive implant",
+        "typical_use_failure_pct": 0.1,
+        "reliability_note": null,
+        "mood_evidence": "Progestin-only; mood evidence is mixed and limited. Individual response varies.",
+        "tradeoffs": "Bleeding pattern can be unpredictable. Needs a clinician to insert and remove.",
+        "evidence_levels": {
+          "efficacy_data": 3,
+          "mood_data": 1
+        },
+        "evidence_score": 73,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+        ],
+        "verification_status": "needs_review",
+        "rank": 2,
+        "goalFit": 3
+      },
+      {
+        "id": "copper_iud",
+        "method": "Copper IUD (non-hormonal)",
+        "typical_use_failure_pct": 0.8,
+        "reliability_note": null,
+        "mood_evidence": "Non-hormonal, so no direct hormonal mood mechanism. Direct mood studies are limited.",
+        "tradeoffs": "Can make periods heavier or more painful, especially at first. Needs a clinician to insert.",
+        "evidence_levels": {
+          "efficacy_data": 3,
+          "mood_data": 1
+        },
+        "evidence_score": 73,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+        ],
+        "verification_status": "needs_review",
+        "rank": 3,
+        "goalFit": 3
+      }
+    ],
+    "sources": [
+      "https://clinicaltrials.gov/search?intr=levonorgestrel and ethinylestradiol",
+      "https://open.fda.gov/apis/drug/label/",
+      "https://pubmed.ncbi.nlm.nih.gov/?term=levonorgestrel+and+ethinylestradiol+pregnancy"
+    ],
+    "dataOrigin": "demo_seed",
+    "dataOriginNote": "Illustrative demo values.",
+    "disclaimer": "Decision support, not medical advice. Never stop a prescribed medicine without talking to your doctor."
+  },
+  "POST_symptoms_match": {
+    "mappedSymptoms": [
+      {
+        "id": "nausea",
+        "label": "Nausea"
+      },
+      {
+        "id": "fatigue",
+        "label": "Unusual tiredness / fatigue"
+      },
+      {
+        "id": "jaw_pain",
+        "label": "Jaw pain"
+      }
+    ],
+    "conditions": [
+      {
+        "id": "mi",
+        "name": "Heart attack (myocardial infarction)",
+        "matchScore": 0.571,
+        "matchStrength": "Moderate overlap",
+        "matchedSymptoms": [
+          "Jaw pain",
+          "Nausea",
+          "Unusual tiredness / fatigue"
+        ],
+        "femaleTypicalMatched": [
+          "Jaw pain",
+          "Nausea",
+          "Unusual tiredness / fatigue"
+        ],
+        "textbookPresentation": [
+          "Crushing chest pain",
+          "Pain spreading to the left arm",
+          "Sweating"
+        ],
+        "femalePresentation": [
+          "May have little or no chest pain",
+          "Jaw, neck or upper-back pain",
+          "Nausea or vomiting",
+          "Shortness of breath",
+          "Unusual fatigue",
+          "Light-headedness"
+        ],
+        "oftenMissed": true,
+        "whyOftenMissed": "Symptoms in women, especially younger women, are more often attributed to non-cardiac causes.",
+        "skippedTests": [
+          "High-sensitivity troponin with sex-specific cut-offs",
+          "Repeat/serial ECG"
+        ],
+        "questionsForDoctor": [
+          "Could high-sensitivity troponin with sex-specific cut-offs be considered in my case?",
+          "Could repeat/serial ECG be considered in my case?",
+          "Could my symptoms be presenting differently in women than the textbook description of heart attack (myocardial infarction)?",
+          "Which other possible causes should be ruled out first?"
+        ],
+        "sources": [
+          "https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women",
+          "https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women"
+        ],
+        "framing": "A condition that can present this way and is sometimes missed. This is not a diagnosis."
+      },
+      {
+        "id": "stroke",
+        "name": "Stroke",
+        "matchScore": 0.327,
+        "matchStrength": "Some overlap",
+        "matchedSymptoms": [
+          "Nausea",
+          "Unusual tiredness / fatigue"
+        ],
+        "femaleTypicalMatched": [
+          "Nausea",
+          "Unusual tiredness / fatigue"
+        ],
+        "textbookPresentation": [
+          "Face drooping",
+          "Arm weakness",
+          "Speech difficulty"
+        ],
+        "femalePresentation": [
+          "Non-classic symptoms such as confusion, headache, nausea or general weakness",
+          "Fatigue or fainting"
+        ],
+        "oftenMissed": true,
+        "whyOftenMissed": "Women may more often present without the classic signs, which can delay assessment.",
+        "skippedTests": [
+          "Urgent brain imaging (CT/MRI)",
+          "Stroke assessment even without classic signs"
+        ],
+        "questionsForDoctor": [
+          "Could urgent brain imaging (CT/MRI) be considered in my case?",
+          "Could stroke assessment even without classic signs be considered in my case?",
+          "Could my symptoms be presenting differently in women than the textbook description of stroke?",
+          "Which other possible causes should be ruled out first?"
+        ],
+        "sources": [
+          "https://www.nhs.uk/conditions/stroke/"
+        ],
+        "framing": "A condition that can present this way and is sometimes missed. This is not a diagnosis."
+      }
+    ],
+    "redFlag": false,
+    "redFlagMessage": null,
+    "disclaimer": "Decision support only, not medical advice or a diagnosis."
+  },
+  "POST_sideeffects_check": {
+    "flags": [
+      {
+        "symptom": "Low mood",
+        "symptomId": "low_mood",
+        "drug": "levonorgestrel and ethinylestradiol",
+        "confidence": "moderate",
+        "onLabel": true,
+        "femaleReportShareElevated": false,
+        "femaleReportSharePct": 99,
+        "overallFemaleSharePct": 99,
+        "wording": "Low mood is a reported side effect of levonorgestrel and ethinylestradiol (it appears in the product label data). Sex comparison is not informative because almost all reports for this medicine are from women. Discuss with your doctor.",
+        "alsoConsider": "Symptoms can also have causes unrelated to medicines. See the Symptoms tab for conditions that can present this way.",
+        "dataOrigin": "demo_seed",
+        "sources": [
+          "https://clinicaltrials.gov/search?intr=levonorgestrel and ethinylestradiol",
+          "https://open.fda.gov/apis/drug/label/",
+          "https://pubmed.ncbi.nlm.nih.gov/?term=levonorgestrel+and+ethinylestradiol+pregnancy"
+        ]
+      },
+      {
+        "symptom": "Unusual tiredness / fatigue",
+        "symptomId": "fatigue",
+        "drug": "levonorgestrel and ethinylestradiol",
+        "confidence": "lower",
+        "onLabel": false,
+        "femaleReportShareElevated": false,
+        "femaleReportSharePct": 99,
+        "overallFemaleSharePct": 99,
+        "wording": "Unusual tiredness / fatigue appears in voluntary adverse-event reports for levonorgestrel and ethinylestradiol, but we did not find it in the label data we hold. Reports cannot show cause. Discuss with your doctor if it bothers you.",
+        "alsoConsider": "Symptoms can also have causes unrelated to medicines. See the Symptoms tab for conditions that can present this way.",
+        "dataOrigin": "demo_seed",
+        "sources": [
+          "https://clinicaltrials.gov/search?intr=levonorgestrel and ethinylestradiol",
+          "https://open.fda.gov/apis/drug/label/",
+          "https://pubmed.ncbi.nlm.nih.gov/?term=levonorgestrel+and+ethinylestradiol+pregnancy"
+        ]
+      }
+    ],
+    "noDataFor": [],
+    "dosingFlags": [],
+    "possibleCascades": [],
+    "unmatchedMedicines": [],
+    "limitations": [
+      "Adverse-event reports are voluntary and unverified; they cannot prove a medicine caused a symptom or show how often it happens.",
+      "Decision support only. Never stop a prescribed medicine without talking to your doctor."
+    ]
+  },
+  "POST_pillcheck_score_crisis": {
+    "crisisFlag": true,
+    "crisisResources": [
+      {
+        "region": "India",
+        "name": "Tele-MANAS (24x7 mental health helpline)",
+        "contact": "14416 or 1800-891-4416"
+      },
+      {
+        "region": "India",
+        "name": "KIRAN mental health helpline",
+        "contact": "1800-599-0019"
+      },
+      {
+        "region": "Worldwide",
+        "name": "Find a helpline in your country",
+        "contact": "https://findahelpline.com"
+      },
+      {
+        "region": "Emergency",
+        "name": "If you may be in immediate danger",
+        "contact": "Call your local emergency number (112 in India)"
+      }
+    ],
+    "phq9": {
+      "total": 9,
+      "band": "mild"
+    },
+    "gad7": {
+      "total": 8,
+      "band": "mild"
+    },
+    "crisisMessage": "You are not alone and support is available. Please consider reaching out to one of these services or someone you trust.",
+    "disclaimer": "Screening questionnaires are not a diagnosis. Never stop a prescribed medicine without talking to your doctor."
+  },
+  "GET_pillcheck_trend_demo_user": {
+    "entries": [
+      {
+        "date": "2026-08-29",
+        "phq9": 6,
+        "gad7": 5,
+        "event": null
+      },
+      {
+        "date": "2026-09-05",
+        "phq9": 6,
+        "gad7": 5,
+        "event": "started: levonorgestrel and ethinylestradiol (DEMO)"
+      },
+      {
+        "date": "2026-09-12",
+        "phq9": 7,
+        "gad7": 5,
+        "event": null
+      },
+      {
+        "date": "2026-09-19",
+        "phq9": 9,
+        "gad7": 6,
+        "event": null
+      },
+      {
+        "date": "2026-09-26",
+        "phq9": 10,
+        "gad7": 7,
+        "event": null
+      },
+      {
+        "date": "2026-10-03",
+        "phq9": 11,
+        "gad7": 8,
+        "event": null
+      },
+      {
+        "date": "2026-10-10",
+        "phq9": 12,
+        "gad7": 8,
+        "event": null
+      },
+      {
+        "date": "2026-10-17",
+        "phq9": 13,
+        "gad7": 9,
+        "event": null
+      },
+      {
+        "date": "2026-10-24",
+        "phq9": 14,
+        "gad7": 9,
+        "event": null
+      }
+    ],
+    "isSimulated": true,
+    "sinceEvent": {
+      "event": "started: levonorgestrel and ethinylestradiol (DEMO)",
+      "eventDate": "2026-09-05",
+      "baselinePhq9": 6,
+      "latestPhq9": 14,
+      "phq9": {
+        "delta": 8,
+        "worsened": true,
+        "improved": false
+      },
+      "gad7": {
+        "delta": 4,
+        "worsened": true,
+        "improved": false
+      }
+    },
+    "alert": {
+      "wording": "Your scores have risen since you recorded starting or switching this medicine. Mood changes are a documented effect in some women using hormonal contraception (an association in large cohort studies; absolute risk is small and many women see no change). Consider discussing this with your doctor. Do not stop a prescribed medicine without medical advice.",
+      "linkToSideEffects": {
+        "suggestedSymptoms": [
+          "low_mood"
+        ],
+        "action": "Check if this could be a side effect"
+      },
+      "sources": [
+        "https://womensmentalhealth.org/posts/11202/"
+      ]
+    }
+  },
+  "GET_pillcheck_alternatives_contraception": {
+    "goal": "contraception",
+    "methods": [
+      {
+        "id": "lng_iud",
+        "method": "Hormonal IUD (levonorgestrel)",
+        "typical_use_failure_pct": 0.1,
+        "reliability_note": "CDC lists 0.1-0.4% typical-use failure; verify exact figure.",
+        "mood_evidence": "In the large Danish cohort, hormonal methods incl. the hormonal IUD were associated with later antidepressant use; this is an association, absolute risk is small, and response varies.",
+        "tradeoffs": "Often greatly reduces bleeding. Needs a clinician to insert; spotting is common early on.",
+        "evidence_levels": {
+          "efficacy_data": 3,
+          "mood_data": 2
+        },
+        "evidence_score": 87,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception",
+          "https://womensmentalhealth.org/posts/11202/"
+        ],
+        "verification_status": "needs_review",
+        "rank": 1,
+        "goalFit": 3
+      },
+      {
+        "id": "implant",
+        "method": "Contraceptive implant",
+        "typical_use_failure_pct": 0.1,
+        "reliability_note": null,
+        "mood_evidence": "Progestin-only; mood evidence is mixed and limited. Individual response varies.",
+        "tradeoffs": "Bleeding pattern can be unpredictable. Needs a clinician to insert and remove.",
+        "evidence_levels": {
+          "efficacy_data": 3,
+          "mood_data": 1
+        },
+        "evidence_score": 73,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+        ],
+        "verification_status": "needs_review",
+        "rank": 2,
+        "goalFit": 3
+      },
+      {
+        "id": "copper_iud",
+        "method": "Copper IUD (non-hormonal)",
+        "typical_use_failure_pct": 0.8,
+        "reliability_note": null,
+        "mood_evidence": "Non-hormonal, so no direct hormonal mood mechanism. Direct mood studies are limited.",
+        "tradeoffs": "Can make periods heavier or more painful, especially at first. Needs a clinician to insert.",
+        "evidence_levels": {
+          "efficacy_data": 3,
+          "mood_data": 1
+        },
+        "evidence_score": 73,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+        ],
+        "verification_status": "needs_review",
+        "rank": 3,
+        "goalFit": 3
+      },
+      {
+        "id": "cocp",
+        "method": "Combined pill (oestrogen + progestin)",
+        "typical_use_failure_pct": 7,
+        "reliability_note": null,
+        "mood_evidence": "Associated with later antidepressant use and depression diagnoses in a Danish cohort of >1M women, especially in adolescents (association, small absolute risk). Many women notice no change, so personal tracking matters.",
+        "tradeoffs": "Needs daily adherence. Small increase in clot risk; not suitable for everyone (e.g. migraine with aura). Often reduces cramps, acne and bleeding.",
+        "evidence_levels": {
+          "efficacy_data": 3,
+          "mood_data": 3
+        },
+        "evidence_score": 100,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception",
+          "https://womensmentalhealth.org/posts/11202/"
+        ],
+        "verification_status": "needs_review",
+        "rank": 4,
+        "goalFit": 2
+      },
+      {
+        "id": "pop",
+        "method": "Progestin-only pill",
+        "typical_use_failure_pct": 7,
+        "reliability_note": null,
+        "mood_evidence": "Evidence on mood is limited and mixed.",
+        "tradeoffs": "Needs very regular timing; irregular bleeding is common. Suitable when oestrogen is not.",
+        "evidence_levels": {
+          "efficacy_data": 2,
+          "mood_data": 1
+        },
+        "evidence_score": 60,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+        ],
+        "verification_status": "needs_review",
+        "rank": 5,
+        "goalFit": 2
+      },
+      {
+        "id": "condom",
+        "method": "Condoms / barrier methods",
+        "typical_use_failure_pct": 13,
+        "reliability_note": "Male condom ~13% typical-use failure (CDC); verify.",
+        "mood_evidence": "No hormonal effect; no mood link expected.",
+        "tradeoffs": "Lower typical-use reliability than long-acting methods; protects against STIs.",
+        "evidence_levels": {
+          "efficacy_data": 2,
+          "mood_data": 0
+        },
+        "evidence_score": 47,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+        ],
+        "verification_status": "needs_review",
+        "rank": 6,
+        "goalFit": 2
+      },
+      {
+        "id": "injectable",
+        "method": "Injectable (DMPA)",
+        "typical_use_failure_pct": 4,
+        "reliability_note": null,
+        "mood_evidence": "Associated with mood changes in some observational data; evidence mixed.",
+        "tradeoffs": "Return of fertility can be delayed; long-term use is linked to reduced bone density.",
+        "evidence_levels": {
+          "efficacy_data": 2,
+          "mood_data": 1
+        },
+        "evidence_score": 60,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+        ],
+        "verification_status": "needs_review",
+        "rank": 7,
+        "goalFit": 1
+      },
+      {
+        "id": "fam",
+        "method": "Fertility-awareness methods",
+        "typical_use_failure_pct": null,
+        "reliability_note": "CDC range is wide by method; verify.",
+        "mood_evidence": "No hormonal effect.",
+        "tradeoffs": "Typical-use failure varies widely (roughly 2-23% depending on method); needs consistent tracking and training.",
+        "evidence_levels": {
+          "efficacy_data": 1,
+          "mood_data": 0
+        },
+        "evidence_score": 13,
+        "sources": [
+          "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception"
+        ],
+        "verification_status": "needs_review",
+        "rank": 8,
+        "goalFit": 1
+      }
+    ],
+    "accuracyNotes": [
+      "The combined pill raises TOTAL cortisol mainly via binding proteins; FREE cortisol is usually not elevated. Do not describe it as raising 'stress hormones'.",
+      "Mood effects of hormonal contraception are an association in observational data; absolute risk is small and individual response varies.",
+      "This tool never advises stopping a medicine. Users are told to discuss changes with a doctor."
+    ],
+    "disclaimer": "Decision support, not medical advice. Never stop a prescribed medicine without talking to your doctor."
+  },
+  "GET_registry_signals": {
+    "isSimulated": true,
+    "entries": 1500,
+    "testsRun": 80,
+    "flaggedCount": 1,
+    "signals": [
+      {
+        "drug": "DemoDrug-C",
+        "outcome": "preterm_birth",
+        "trimester": 2,
+        "a": 29,
+        "b": 73,
+        "c": 124,
+        "d": 1080,
+        "prr": 2.76,
+        "ror": 3.46,
+        "rorCI95": [
+          2.17,
+          5.53
+        ],
+        "chi2": 28.16,
+        "flagged": true
+      }
+    ],
+    "multipleTestingNote": "Many drug x outcome x trimester combinations are tested, so some flags can arise by chance. Treat each as a question to investigate.",
+    "interpretation": "A flagged signal is a hypothesis for clinical/regulatory review, not proof of causation. Data shown is SIMULATED."
+  }
+}

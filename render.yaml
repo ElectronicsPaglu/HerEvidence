@@ -1,0 +1,16 @@
+# Render "Blueprint": one free web service serves both the API and the app UI.
+services:
+  - type: web
+    name: herevidence
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: HASH_SALT
+        generateValue: true
+      - key: ANTHROPIC_API_KEY   # optional: lets free-text symptom input use the AI mapper (falls back to keywords if unset)
+        sync: false

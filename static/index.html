@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HerEvidence</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+:root{--bg:#F6F4FA;--sf:#fff;--tx:#1F1530;--mu:#6B6280;--ev:#0E8F8A;--gap:#C2185B;--ln:#E2DDEC;--wn:#FFF1D6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150F20;--sf:#221A33;--tx:#F3EEFA;--mu:#A99FC0;--ev:#37C4BE;--gap:#FF5C93;--ln:#3A2F52;--wn:#3B2F14}}
+:root[data-theme="dark"]{--bg:#150F20;--sf:#221A33;--tx:#F3EEFA;--mu:#A99FC0;--ev:#37C4BE;--gap:#FF5C93;--ln:#3A2F52;--wn:#3B2F14}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 'Source Sans 3',system-ui,sans-serif}
+#app{max-width:480px;margin:0 auto;padding:16px 16px 96px}
+h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;margin:0 0 8px;line-height:1.15}
+h1{font-size:28px;font-weight:800}h2{font-size:21px}h3{font-size:17px}
+.mu{color:var(--mu);font-size:14px}.card{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:14px;margin:12px 0}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--sf);border-top:1px solid var(--ln);display:flex;justify-content:center;padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}
+nav button{flex:1;max-width:96px;background:none;border:0;color:var(--mu);font:600 12px 'Source Sans 3',sans-serif;padding:6px 2px;cursor:pointer;border-radius:8px}
+nav button.on{color:var(--tx);background:var(--bg)}nav i{display:block;font-style:normal;font-size:20px}
+button.p{background:var(--tx);color:var(--bg);border:0;border-radius:10px;padding:11px 16px;font:600 15px 'Source Sans 3',sans-serif;cursor:pointer}
+button.s{background:none;border:1px solid var(--ln);color:var(--tx);border-radius:10px;padding:9px 14px;font:600 14px 'Source Sans 3',sans-serif;cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--ev);outline-offset:2px}
+.chip{display:inline-block;border:1px solid var(--ln);background:var(--sf);color:var(--tx);border-radius:99px;padding:7px 13px;margin:0 6px 8px 0;font:600 14px 'Source Sans 3',sans-serif;cursor:pointer}
+.chip.on{background:var(--ev);border-color:var(--ev);color:#fff}
+input,select{width:100%;padding:11px;border:1px solid var(--ln);border-radius:10px;background:var(--sf);color:var(--tx);font:16px 'Source Sans 3',sans-serif}
+.row{display:flex;gap:8px;align-items:center}.row>*{flex:1}.row>button.mic{flex:0 0 46px}
+.bar{height:22px;border-radius:6px;background:repeating-linear-gradient(45deg,var(--gap) 0 5px,transparent 5px 10px);border:1.5px solid var(--gap);overflow:hidden;margin:6px 0}
+.bar b{display:block;height:100%;background:var(--ev)}
+.big{font:800 40px 'Bricolage Grotesque',sans-serif}
+.warn{background:var(--wn);border-radius:10px;padding:10px 12px;font-size:14px;margin:10px 0}
+.crisis{border:2px solid var(--gap);border-radius:12px;padding:12px;margin:12px 0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:8px}.cols>div{background:var(--bg);border-radius:10px;padding:10px;font-size:14px}
+.cols h3{font-size:14px}table{width:100%;border-collapse:collapse;font-size:14px}td,th{text-align:left;padding:6px 4px;border-bottom:1px solid var(--ln)}
+.wrap{overflow-x:auto}.sc{color:var(--gap);font-weight:600}
+.chipl{font-size:13px;color:var(--ev);margin-right:8px}
+</style></head><body>
+<div id="app"></div>
+<nav id="nav"></nav>
+<script>
+/* HerEvidence app: Member B's design wired to Member A's API.
+   Same-origin by default (served by FastAPI at "/"). To point at a remote API open  index.html?api=https://your-server  */
+var API=(new URLSearchParams(location.search).get('api')||'').replace(/\/$/,'');
+var uid=(function(){try{var u=localStorage.getItem('he_uid');if(!u){u='u'+Math.random().toString(36).slice(2)+Date.now();localStorage.setItem('he_uid',u)}return u}catch(e){return 'anon'}})();
+var PHQ=["Little interest or pleasure","Feeling down or hopeless","Sleep problems","Tired or low energy","Appetite changes","Feeling bad about yourself","Trouble concentrating","Moving or speaking slowly, or restless","Thoughts of being better off dead or of self-harm"];
+var COMMON=["chest_pain","jaw_pain","nausea","fatigue","shortness_of_breath","pelvic_pain","painful_periods","inattention","anxiety","headache","joint_pain","hair_loss"];
+var OUTCOMES=[["preterm_birth","Preterm birth"],["low_birth_weight","Low birth weight"],["neonatal_jaundice","Neonatal jaundice"],["gestational_hypertension","Gestational hypertension"],["no_complication","No complication"]];
+var GOALS=[["contraception","contraception"],["pcos","PCOS"],["acne","acne"],["heavy_bleeding","heavy bleeding"]];
+var S={tab:"rx",drug:"zolpidem",drugs:[],vocab:[],dd:null,ddErr:null,sel:[],txt:"",mr:null,cond:null,condQs:[],showAll:false,
+ log:{drug:"zolpidem",sym:"fatigue"},fx:null,goal:"contraception",alts:null,mood:[],labels:[],ev:3,alertText:null,simMood:false,ans:[0,0,0,0,0,0,0,0,0],
+ saved:null,reg:false,regMsg:"",sig:null,offline:false,tick:0};
+var $=function(s){return document.querySelector(s)};
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function api(path,body){var o=body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{};
+ return fetch(API+path,o).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(typeof j.detail==='string'?j.detail:'Request failed');return j})})}
+function fail(e){if(e instanceof TypeError)S.offline=true;return e}
+function label(id){var v=S.vocab.filter(function(x){return x.id===id})[0];return v?v.label:id}
+function src(arr){return (arr||[]).slice(0,3).map(function(u,i){return '<a class="chipl" href="'+esc(u)+'" target="_blank" rel="noopener">Source '+(i+1)+'</a>'}).join(' ')}
+function foot(){return '<p class="mu" style="margin-top:20px">Decision support, not medical advice. HerEvidence gives no safe or unsafe verdicts. Never stop a prescribed medicine without talking to your doctor.</p>'}
+function crisis(){return '<div class="crisis" role="alert"><h3>You are not alone</h3><p>If you have thoughts of harming yourself, please reach out now. India: Tele-MANAS 14416 or KIRAN 1800-599-0019. US: call or text 988. Or call your local emergency number.</p></div>'}
+function pdfCard(){var q=[].concat(S.condQs||[]);
+ if(S.fx&&S.fx.flags&&S.fx.flags.length){var f=S.fx.flags[0];q.push('I noticed '+f.symptom.toLowerCase()+' can be reported with '+f.drug+'. Could it be related to my medicine?')}
+ q.push("Could my medicine be causing these symptoms?");q.push("What evidence exists for women for this treatment?");return q}
+
+/* ---------- data loaders ---------- */
+function loadDrug(name){S.ddErr=null;api('/drug/'+encodeURIComponent(name)).then(function(d){S.dd=d;S.drug=d.name}).catch(function(e){fail(e);S.dd=null;S.ddErr=e.message}).then(draw)}
+function runMatch(){var n=++S.tick;if(!S.sel.length&&!S.txt){S.mr=null;draw();return}
+ api('/symptoms/match',{symptomIds:S.sel,text:S.txt||null}).then(function(r){if(n!==S.tick)return;S.mr=r;
+  r.mappedSymptoms.forEach(function(m){if(S.sel.indexOf(m.id)<0)S.sel.push(m.id)})}).catch(function(e){fail(e);S.mr=null}).then(draw)}
+function runSE(){api('/sideeffects/check',{medicines:[S.log.drug],symptomIds:[S.log.sym]}).then(function(r){S.fx=r}).catch(function(e){fail(e);S.fx=null}).then(draw)}
+function loadAlts(){api('/pillcheck/alternatives?goal='+S.goal).then(function(r){S.alts=r}).catch(function(e){fail(e);S.alts=null}).then(draw)}
+function loadTrend(){api('/pillcheck/trend/demo_user').then(function(t){S.mood=t.entries.map(function(e){return e.phq9});S.labels=t.entries.map(function(e){return e.date.slice(5)});
+ var i=t.entries.findIndex(function(e){return e.event});S.ev=i>0?i:3;S.alertText=t.alert?t.alert.wording:null;S.simMood=t.isSimulated}).catch(fail).then(draw)}
+function loadSig(){api('/registry/signals?include_all=true').then(function(s){S.sig=s}).catch(fail).then(draw)}
+function init(){api('/drugs').then(function(d){S.drugs=d.map(function(x){return x.name})}).catch(fail)
+ .then(function(){return api('/symptoms/vocabulary').then(function(v){S.vocab=v}).catch(fail)}).then(draw);
+ loadDrug(S.drug);loadTrend();loadSig();loadAlts()}
+
+/* ---------- views ---------- */
+var V={
+rx:function(){var d=S.dd,h='<h1>Was this studied on her?</h1><p class="mu">Search a medicine to see how much evidence exists for women.</p>'+
+ '<div class="row"><select id="dsel" aria-label="Medicine">'+S.drugs.map(function(k){return '<option'+(k===S.drug?' selected':'')+'>'+esc(k)+'</option>'}).join('')+'</select><button class="s" id="scan">Scan box</button></div>'+
+ '<div class="row" style="margin-top:8px"><input id="dq" placeholder="Or type a name (brand or generic)" aria-label="Search medicine"><button class="s" id="dgo" style="flex:0 0 90px">Search</button></div>';
+ if(S.ddErr)h+='<div class="warn">'+esc(S.ddErr)+'</div>';
+ if(d){h+='<div class="card"><h2>'+esc(d.name)+'</h2><p class="mu" style="margin:0 0 6px">'+esc(d.drugClass)+'</p><div class="big">'+d.evidenceScore+'<span class="mu"> / 100</span></div><div class="mu">Evidence Score for Women: <b>'+esc(d.evidenceLabel)+'</b></div>'+
+  '<div class="bar" role="img" aria-label="Evidence '+d.evidenceScore+' percent"><b style="width:'+d.evidenceScore+'%"></b></div><p class="mu">Teal is what is known. Hatched is the gap. '+esc(d.scoreNote)+'</p>'+
+  (d.dataOrigin==='demo_seed'?'<div class="warn">Demo values: illustrative placeholders until the live data pipeline is run.</div>':'')+
+  '<h3>Pregnancy</h3><p>'+esc(d.pregnancyData.summary)+'<br><span class="mu">'+esc(d.pregnancyData.labelNote||'')+'</span></p>'+
+  '<h3>Sex-specific data</h3><p>'+esc(d.sexSpecificData.summary)+(d.sexSpecificData.dosingNote?'<br><b>'+esc(d.sexSpecificData.dosingNote)+'</b>':'')+'</p>'+
+  '<h3>Breastfeeding</h3><p>'+esc(d.breastfeedingData.summary)+'</p>'+
+  (d.sexSpecificEffects.length?'<h3>Reported effects by sex</h3><p class="mu">'+d.sexSpecificEffects.slice(0,3).map(function(e){return esc(e.reaction.toLowerCase())+' ('+Math.round(e.female_share*100)+'% of reports from women)'}).join('; ')+'. Reports show association only.</p>':'')+
+  (d.alternatives.length?'<h3>Alternatives to discuss</h3><p>'+d.alternatives.map(function(a){return esc(a.method)}).join('; ')+'</p>':'')+
+  '<p class="mu">'+src(d.sources)+'</p></div>'}else if(!S.ddErr&&!S.offline)h+='<div class="card mu">Loading...</div>';
+ h+='<div class="card"><h3>Pregnancy exposure registry</h3><p class="mu">Optional and anonymized. Your logs help find early safety signals.</p><label class="row"><input type="checkbox" id="reg" style="flex:0 0 22px;height:22px"'+(S.reg?' checked':'')+'><span>I consent to share anonymized logs</span></label>';
+ if(S.reg)h+='<div class="row" style="margin-top:8px"><select id="rtri" aria-label="Trimester"><option value="1">Trimester 1</option><option value="2">Trimester 2</option><option value="3">Trimester 3</option></select><select id="rout" aria-label="Outcome">'+OUTCOMES.map(function(o){return '<option value="'+o[0]+'">'+o[1]+'</option>'}).join('')+'</select></div><p><button class="p" id="regsave">Log exposure to '+esc(S.drug)+'</button></p>';
+ h+=(S.regMsg?'<p class="mu">'+esc(S.regMsg)+'</p>':'')+'</div>';
+ h+='<div class="card"><h3>Signal dashboard (SIMULATED data)</h3>';
+ if(S.sig){h+='<div class="wrap"><table><tr><th>Medicine</th><th>Outcome</th><th>PRR</th></tr>'+S.sig.signals.slice(0,6).map(function(s){return '<tr><td>'+esc(s.drug)+(s.trimester?' (T'+s.trimester+')':'')+'</td><td>'+esc(s.outcome.replace(/_/g,' '))+'</td><td'+(s.flagged?' class="sc"':'')+'>'+s.prr+(s.flagged?' flag':'')+'</td></tr>'}).join('')+'</table></div><p class="mu">'+esc(S.sig.interpretation)+' Fictional medicine names.</p>'}else h+='<p class="mu">Loading...</p>';
+ return h+'</div>'},
+
+sx:function(){var ids=COMMON.concat(S.sel.filter(function(s){return COMMON.indexOf(s)<0})),all=S.vocab.map(function(v){return v.id}),show=S.showAll?all:ids;
+ var h='<h1>What are you noticing?</h1><p class="mu">Tap symptoms, type, or use your voice. Voice works in many languages.</p>'+
+ '<div class="row"><button class="s mic" id="mic" aria-label="Voice input">🎤</button><input id="txt" aria-label="Describe symptoms" placeholder="e.g. jaw pain and feeling exhausted" value="'+esc(S.txt)+'"><button class="s" id="txtgo" style="flex:0 0 70px">Find</button></div><p class="mu" id="micmsg"></p>'+
+ '<div style="margin-top:6px">'+show.map(function(s){return '<button class="chip'+(S.sel.indexOf(s)>-1?' on':'')+'" data-sym="'+s+'">'+esc(label(s))+'</button>'}).join('')+'<button class="chip" data-more="1">'+(S.showAll?'Show fewer':'Show all symptoms')+'</button></div>';
+ var r=S.mr;
+ if(r&&r.redFlag)h+='<div class="crisis" role="alert"><h3>This could be urgent</h3><p>'+esc(r.redFlagMessage)+'</p></div>';
+ if(r&&r.supportMessage)h+='<div class="card">'+esc(r.supportMessage)+'</div>';
+ if(!r||!r.conditions.length)return h+'<div class="card mu">'+(S.sel.length||S.txt?esc((r&&r.message)||'No condition overlap found. This does not rule anything out. Discuss your symptoms with your doctor.'):'Select a symptom to compare textbook and female presentation.')+'</div>';
+ if(r.message)h+='<div class="card mu">'+esc(r.message)+'</div>';
+ return h+r.conditions.map(function(c,i){return '<div class="card"><h2>'+esc(c.name)+'</h2><p class="mu" style="margin:0 0 8px">'+esc(c.matchStrength)+'. '+esc(c.framing)+'</p><div class="cols"><div><h3>Textbook</h3>'+esc(c.textbookPresentation.join('. '))+'.</div><div><h3>Often in women</h3>'+esc(c.femalePresentation.join('. '))+'.</div></div>'+
+  '<p><b>Tests often skipped:</b> '+esc(c.skippedTests.join('; '))+'</p><p class="mu">'+esc(c.whyOftenMissed)+' '+src(c.sources)+'</p><button class="s" data-pick="'+i+'">'+(S.cond===c.name?'Added to doctor card':'Add questions to doctor card')+'</button></div>'}).join('')+'<div class="warn">Decision support only. This is not a diagnosis. For chest pain or breathlessness, call emergency services.</div>'},
+
+se:function(){var h='<h1>Side effect or something else?</h1><p class="mu">Log a medicine and a symptom.</p><div class="card"><label>Medicine<select id="ld">'+S.drugs.map(function(x){return '<option'+(x===S.log.drug?' selected':'')+'>'+esc(x)+'</option>'}).join('')+'</select></label><label>Symptom<select id="ls">'+S.vocab.map(function(x){return '<option value="'+x.id+'"'+(x.id===S.log.sym?' selected':'')+'>'+esc(x.label)+'</option>'}).join('')+'</select></label></div>';
+ var r=S.fx;if(!r)return h+'<div class="card mu">Checking...</div>';
+ if(r.unmatchedMedicines.length)h+='<div class="warn">No data held for that medicine yet.</div>';
+ h+=r.flags.map(function(f){return '<div class="card"><h3 class="sc">Possible link ('+esc(f.confidence)+' confidence)</h3><p>'+esc(f.wording)+'</p><p class="mu">'+esc(f.alsoConsider)+' '+src(f.sources)+'</p></div>'}).join('');
+ if(!r.flags.length)h+='<div class="card"><h3>No known link in our data</h3><p class="mu">'+esc((r.noDataFor[0]||{}).message||'This does not rule one out. Discuss the symptom with your doctor.')+'</p></div>';
+ h+=r.possibleCascades.map(function(c){return '<div class="card"><h3>Possible prescribing cascade</h3><p>'+esc(c.description)+' '+esc(c.wording)+'</p></div>'}).join('');
+ h+='<div class="card"><h3>Sex-specific dosing</h3><p>'+(r.dosingFlags.length?esc(r.dosingFlags[0].note):'No sex-specific dosing note found for this medicine.')+'</p></div>';
+ return h+'<p class="mu">'+esc(r.limitations[0])+'</p>'},
+
+pc:function(){var mx=27,w=300,h=120,n=S.mood.length;if(!n)return '<h1>Pill Check</h1><div class="card mu">Loading...</div>';
+ var pts=S.mood.map(function(v,i){return[20+i*(w-30)/Math.max(1,n-1),h-10-v/mx*(h-20)]});var line=pts.map(function(p){return p.join(',')}).join(' ');
+ var ev=Math.min(S.ev,n-1),start=pts[ev][0]-8,last=S.mood[n-1],base=S.mood[Math.max(0,ev-1)];
+ var svg='<svg viewBox="0 0 '+w+' '+h+'" width="100%" role="img" aria-label="PHQ-9 trend"><rect x="'+start+'" y="0" width="'+(w-start)+'" height="'+h+'" fill="var(--wn)"/><text x="'+(start+4)+'" y="12" font-size="10" fill="var(--mu)">pill started</text><polyline points="'+line+'" fill="none" stroke="var(--gap)" stroke-width="2.5"/>'+
+  pts.map(function(p,i){return '<circle cx="'+p[0]+'" cy="'+p[1]+'" r="3.5" fill="var(--gap)"/><text x="'+(p[0]-8)+'" y="'+(h-1)+'" font-size="8" fill="var(--mu)">'+esc(S.labels[i])+'</text>'}).join('')+'</svg>';
+ var done=S.ans.reduce(function(a,b){return a+b},0);
+ var o='<h1>Pill Check</h1><p class="mu">Track mood before and after a pill. Effects vary from person to person.</p><div class="card"><h3>Mood score (PHQ-9)</h3>'+svg+(S.simMood?'<p class="mu">Demo user data (simulated).</p>':'')+
+  (last-base>=5?'<div class="warn">'+esc(S.alertText||('Your score rose '+(last-base)+' points since the pill started. Some women report mood changes with hormonal contraception. Bring this chart to your doctor. Do not stop your pill without advice.'))+'<p><button class="s" data-link="1">See if this could be a side effect</button></p></div>':'')+'</div>'+
+  '<div class="card"><h3>Log today</h3>'+PHQ.map(function(q,i){return '<div class="mu" style="margin-top:8px">'+q+'</div><select data-q="'+i+'" aria-label="'+q+'">'+["Not at all","Several days","More than half the days","Nearly every day"].map(function(t,v){return '<option value="'+v+'"'+(S.ans[i]===v?' selected':'')+'>'+t+'</option>'}).join('')+'</select>'}).join('')+
+  '<p><button class="p" id="phqsave">Save score ('+done+')</button></p>'+(S.saved?'<p class="mu">PHQ-9 total '+S.saved.phq9.total+': '+esc(S.saved.phq9.band)+'. This is a screening score, not a diagnosis.</p>':'')+'</div>'+(S.ans[8]>0||done>=20?crisis():'');
+ o+='<h2>Alternatives Navigator</h2><div>'+GOALS.map(function(g){return '<button class="chip'+(S.goal===g[0]?' on':'')+'" data-goal="'+g[0]+'">'+g[1]+'</button>'}).join('')+'</div>';
+ if(S.alts){o+=S.alts.methods.map(function(a){var rel=a.typical_use_failure_pct!=null?a.typical_use_failure_pct+'% typical-use failure in the first year':'n/a (not a contraception figure)';
+  return '<div class="card"><h3>'+esc(a.method)+'</h3><p style="margin:0">Reliability: '+esc(rel)+'<br>Mood: '+esc(a.mood_evidence)+'<br>Trade-off: '+esc(a.tradeoffs)+'<br><span class="mu">Evidence score '+a.evidence_score+'/100 '+src(a.sources)+'</span></p></div>'}).join('')+'<p class="mu">'+S.alts.accuracyNotes.map(esc).join(' ')+'</p>'}
+ return o},
+
+dc:function(){var fx=S.fx&&S.fx.flags[0];return '<h1>Doctor card</h1><p class="mu">One page to bring to your appointment.</p><div class="card"><h3>Questions to ask</h3><ul>'+pdfCard().map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ul><h3>Mood trend</h3><p>PHQ-9: '+S.mood.join(', ')+'</p><h3>Medicine log</h3><p>'+esc(S.log.drug)+' with '+esc(label(S.log.sym))+(fx?'<br><span class="mu">'+esc(fx.wording)+'</span>':'')+'</p></div><button class="p" id="pdf">Export as PDF</button><p class="mu" id="pdfmsg"></p><div class="warn">HerEvidence is decision support, not medical advice. It gives no safe or unsafe verdicts.</div>'}};
+var T=[["rx","💊","GapRx"],["sx","🩺","Symptoms"],["se","🔍","Side effects"],["pc","📈","Pill Check"],["dc","📄","Card"]];
+
+function draw(){var ae=document.activeElement&&document.activeElement.id,y=scrollY;
+ $("#app").innerHTML=(S.offline?'<div class="warn" role="alert">Cannot reach the HerEvidence server. Start the backend (uvicorn app.main:app) and reload.</div>':'')+V[S.tab]()+foot();
+ $("#nav").innerHTML=T.map(function(t){return '<button class="'+(t[0]===S.tab?'on':'')+'" data-t="'+t[0]+'"><i>'+t[1]+'</i>'+t[2]+'</button>'}).join('');scrollTo(0,y)}
+function toTab(t){S.tab=t;if(t==='se'&&!S.fx)runSE();draw();scrollTo(0,0)}
+
+document.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var d=b.dataset;
+ if(d.t)return toTab(d.t);
+ if(d.sym){var i=S.sel.indexOf(d.sym);i>-1?S.sel.splice(i,1):S.sel.push(d.sym);return runMatch()}
+ if(d.more){S.showAll=!S.showAll;return draw()}
+ if(d.pick!==undefined){var c=S.mr.conditions[+d.pick];S.cond=c.name;S.condQs=c.questionsForDoctor;return draw()}
+ if(d.goal){S.goal=d.goal;return loadAlts()}
+ if(d.link){S.log={drug:'levonorgestrel and ethinyl estradiol',sym:'low_mood'};S.fx=null;return toTab('se')}
+ switch(b.id){
+  case 'dgo':var q=$('#dq').value.trim();if(q)loadDrug(q);break;
+  case 'scan':alert('Camera scan opens here in the native app. Use search for now.');break;
+  case 'txtgo':S.txt=$('#txt').value.trim();runMatch();break;
+  case 'mic':voice();break;
+  case 'regsave':api('/registry/entries',{userId:uid,drug:S.drug,trimester:+$('#rtri').value,outcome:$('#rout').value,consent:true})
+    .then(function(){S.regMsg='Logged anonymously. Thank you.'}).catch(function(x){fail(x);S.regMsg='Could not save: '+x.message}).then(draw);break;
+  case 'phqsave':api('/pillcheck/score',{phq9Items:S.ans}).then(function(r){S.saved=r;S.mood.push(r.phq9.total);S.labels.push('Now')}).catch(function(x){fail(x)}).then(draw);break;
+  case 'pdf':pdf();break}});
+document.addEventListener('change',function(e){var t=e.target;
+ if(t.id==='dsel')loadDrug(t.value);
+ else if(t.id==='reg'){S.reg=t.checked;draw()}
+ else if(t.id==='ld'){S.log.drug=t.value;runSE()}
+ else if(t.id==='ls'){S.log.sym=t.value;runSE()}
+ else if(t.dataset&&t.dataset.q!==undefined){S.ans[+t.dataset.q]=+t.value;S.saved=null;draw()}});
+document.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.id==='txt')$('#txtgo').click();if(e.key==='Enter'&&e.target.id==='dq')$('#dgo').click()});
+
+function voice(){var SR=window.SpeechRecognition||window.webkitSpeechRecognition,m=$('#micmsg');
+ if(!SR){m.textContent='Voice input is not supported in this browser. Type instead, or use your keyboard microphone.';return}
+ var r=new SR();r.lang=navigator.language||'en-IN';r.onresult=function(ev){S.txt=ev.results[0][0].transcript;runMatch()};r.onerror=function(){m.textContent='Could not hear that. Try again or type.'};
+ m.textContent='Listening... say your symptoms';r.start()}
+function pdf(){try{var d=new jspdf.jsPDF(),y=20;function line(t,sz,gap){d.setFontSize(sz);d.splitTextToSize(t,180).forEach(function(l){if(y>282){d.addPage();y=20}d.text(l,14,y);y+=gap||6})}
+ line('HerEvidence: Doctor conversation card',18,10);
+ if(S.dd)line('Medicine: '+S.dd.name+'. Evidence Score for Women: '+S.dd.evidenceScore+'/100 ('+S.dd.evidenceLabel+'). This reflects how much was studied in women, not safety.',11);
+ y+=4;line('Questions to ask:',13,8);pdfCard().forEach(function(x){line('- '+x,11)});
+ y+=4;line('PHQ-9 trend: '+S.mood.join(', '),11);
+ line('Medicine log: '+S.log.drug+' / '+label(S.log.sym),11);
+ if(S.fx&&S.fx.flags[0])line(S.fx.flags[0].wording,10);
+ y+=6;line('Decision support only. Not medical advice or diagnosis. Never stop a prescribed medicine without talking to your doctor.',9);
+ d.save('HerEvidence-doctor-card.pdf')}catch(e){$('#pdfmsg').textContent='PDF download is blocked in this preview. Open the app in a full browser tab.'}}
+draw();init();
+</script></body></html>

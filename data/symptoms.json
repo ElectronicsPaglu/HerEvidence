@@ -1,0 +1,831 @@
+[
+  {
+    "id": "chest_pain",
+    "label": "Chest pain or pressure",
+    "synonyms": [
+      "chest pain",
+      "chest pressure",
+      "tight chest",
+      "chest tightness",
+      "pressure in chest"
+    ]
+  },
+  {
+    "id": "shortness_of_breath",
+    "label": "Shortness of breath",
+    "synonyms": [
+      "short of breath",
+      "breathless",
+      "breathlessness",
+      "hard to breathe",
+      "cant breathe",
+      "out of breath",
+      "breathing is hard",
+      "gasping"
+    ]
+  },
+  {
+    "id": "nausea",
+    "label": "Nausea",
+    "synonyms": [
+      "nausea",
+      "nauseous",
+      "queasy",
+      "feel sick",
+      "nauseated",
+      "sick to my stomach"
+    ],
+    "faers_terms": [
+      "NAUSEA"
+    ]
+  },
+  {
+    "id": "vomiting",
+    "label": "Vomiting",
+    "synonyms": [
+      "vomit",
+      "throwing up",
+      "vomiting",
+      "threw up",
+      "been sick"
+    ],
+    "faers_terms": [
+      "VOMITING"
+    ]
+  },
+  {
+    "id": "fatigue",
+    "label": "Unusual tiredness / fatigue",
+    "synonyms": [
+      "fatigue",
+      "tired",
+      "exhausted",
+      "exhaustion",
+      "no energy",
+      "worn out",
+      "low energy",
+      "tiredness",
+      "always tired",
+      "wiped out",
+      "no stamina"
+    ],
+    "faers_terms": [
+      "FATIGUE",
+      "ASTHENIA",
+      "MALAISE"
+    ]
+  },
+  {
+    "id": "jaw_pain",
+    "label": "Jaw pain",
+    "synonyms": [
+      "jaw pain",
+      "jaw ache",
+      "pain in jaw"
+    ]
+  },
+  {
+    "id": "back_pain",
+    "label": "Back pain (upper)",
+    "synonyms": [
+      "back pain",
+      "upper back",
+      "between shoulder blades",
+      "back ache",
+      "backache"
+    ],
+    "faers_terms": [
+      "BACK PAIN"
+    ]
+  },
+  {
+    "id": "arm_pain",
+    "label": "Arm pain",
+    "synonyms": [
+      "arm pain",
+      "pain in arm",
+      "left arm"
+    ]
+  },
+  {
+    "id": "neck_pain",
+    "label": "Neck pain",
+    "synonyms": [
+      "neck pain",
+      "pain in neck"
+    ]
+  },
+  {
+    "id": "sweating",
+    "label": "Cold sweat / sweating",
+    "synonyms": [
+      "cold sweat",
+      "sweating",
+      "sweaty"
+    ],
+    "faers_terms": [
+      "HYPERHIDROSIS"
+    ]
+  },
+  {
+    "id": "dizziness",
+    "label": "Dizziness / light-headedness",
+    "synonyms": [
+      "dizzy",
+      "dizziness",
+      "lightheaded",
+      "light-headed",
+      "faint",
+      "giddy",
+      "light headed",
+      "head spinning",
+      "feel faint"
+    ],
+    "faers_terms": [
+      "DIZZINESS",
+      "PRESYNCOPE"
+    ]
+  },
+  {
+    "id": "palpitations",
+    "label": "Palpitations",
+    "synonyms": [
+      "palpitations",
+      "heart racing",
+      "racing heart",
+      "fluttering",
+      "pounding heart"
+    ],
+    "faers_terms": [
+      "PALPITATIONS",
+      "TACHYCARDIA"
+    ]
+  },
+  {
+    "id": "indigestion",
+    "label": "Indigestion / heartburn",
+    "synonyms": [
+      "indigestion",
+      "heartburn",
+      "acid reflux"
+    ],
+    "faers_terms": [
+      "DYSPEPSIA"
+    ]
+  },
+  {
+    "id": "face_droop",
+    "label": "Face drooping",
+    "synonyms": [
+      "face droop",
+      "drooping face",
+      "facial droop",
+      "one side of face"
+    ]
+  },
+  {
+    "id": "arm_weakness",
+    "label": "Arm or leg weakness",
+    "synonyms": [
+      "arm weakness",
+      "leg weakness",
+      "weak arm",
+      "weak leg",
+      "one side weak"
+    ]
+  },
+  {
+    "id": "speech_difficulty",
+    "label": "Slurred speech / trouble speaking",
+    "synonyms": [
+      "slurred",
+      "speech difficulty",
+      "trouble speaking",
+      "cant speak",
+      "hard to talk"
+    ]
+  },
+  {
+    "id": "sudden_numbness",
+    "label": "Sudden numbness",
+    "synonyms": [
+      "sudden numbness",
+      "numbness",
+      "numb",
+      "pins and needles"
+    ],
+    "faers_terms": [
+      "HYPOAESTHESIA",
+      "PARAESTHESIA"
+    ]
+  },
+  {
+    "id": "confusion",
+    "label": "Confusion",
+    "synonyms": [
+      "confusion",
+      "confused",
+      "disoriented"
+    ],
+    "faers_terms": [
+      "CONFUSIONAL STATE"
+    ]
+  },
+  {
+    "id": "headache",
+    "label": "Headache",
+    "synonyms": [
+      "headache",
+      "head ache",
+      "migraine",
+      "head hurts",
+      "pounding head"
+    ],
+    "faers_terms": [
+      "HEADACHE",
+      "MIGRAINE"
+    ]
+  },
+  {
+    "id": "vision_problems",
+    "label": "Vision problems",
+    "synonyms": [
+      "blurred vision",
+      "vision problems",
+      "double vision",
+      "cant see"
+    ],
+    "faers_terms": [
+      "VISION BLURRED"
+    ]
+  },
+  {
+    "id": "balance_problems",
+    "label": "Balance problems",
+    "synonyms": [
+      "balance",
+      "unsteady",
+      "clumsy"
+    ],
+    "faers_terms": [
+      "BALANCE DISORDER"
+    ]
+  },
+  {
+    "id": "inattention",
+    "label": "Trouble focusing / inattention",
+    "synonyms": [
+      "cant focus",
+      "trouble concentrating",
+      "distracted",
+      "inattentive",
+      "zoning out",
+      "brain fog",
+      "difficulty focusing",
+      "mind wanders"
+    ],
+    "faers_terms": [
+      "DISTURBANCE IN ATTENTION"
+    ]
+  },
+  {
+    "id": "disorganization",
+    "label": "Disorganised / forgetful",
+    "synonyms": [
+      "disorganised",
+      "disorganized",
+      "forgetful",
+      "lose things",
+      "always late",
+      "procrastinat"
+    ]
+  },
+  {
+    "id": "restlessness",
+    "label": "Inner restlessness",
+    "synonyms": [
+      "restless",
+      "restlessness",
+      "cant sit still",
+      "fidget"
+    ],
+    "faers_terms": [
+      "RESTLESSNESS"
+    ]
+  },
+  {
+    "id": "impulsivity",
+    "label": "Impulsivity",
+    "synonyms": [
+      "impulsive",
+      "impulsivity",
+      "act without thinking"
+    ]
+  },
+  {
+    "id": "emotional_dysregulation",
+    "label": "Intense mood swings / irritability",
+    "synonyms": [
+      "mood swings",
+      "irritable",
+      "irritability",
+      "short temper",
+      "emotional outbursts",
+      "overwhelmed"
+    ],
+    "faers_terms": [
+      "MOOD SWINGS",
+      "IRRITABILITY",
+      "AFFECT LABILITY"
+    ]
+  },
+  {
+    "id": "anxiety",
+    "label": "Anxiety",
+    "synonyms": [
+      "anxiety",
+      "anxious",
+      "worry",
+      "panic"
+    ],
+    "faers_terms": [
+      "ANXIETY",
+      "PANIC ATTACK"
+    ]
+  },
+  {
+    "id": "low_mood",
+    "label": "Low mood",
+    "synonyms": [
+      "low mood",
+      "depressed",
+      "depression",
+      "sad",
+      "hopeless",
+      "down all the time",
+      "feeling low",
+      "tearful",
+      "low spirits"
+    ],
+    "faers_terms": [
+      "DEPRESSION",
+      "DEPRESSED MOOD",
+      "MOOD SWINGS",
+      "AFFECT LABILITY"
+    ]
+  },
+  {
+    "id": "social_exhaustion",
+    "label": "Exhausted after socialising",
+    "synonyms": [
+      "drained after socialising",
+      "drained after socializing",
+      "social exhaustion",
+      "exhausted after people"
+    ]
+  },
+  {
+    "id": "sensory_sensitivity",
+    "label": "Sensitive to noise / light / textures",
+    "synonyms": [
+      "sensory",
+      "sensitive to noise",
+      "sensitive to light",
+      "textures",
+      "loud noises"
+    ]
+  },
+  {
+    "id": "masking",
+    "label": "Hiding or 'masking' difficulties",
+    "synonyms": [
+      "masking",
+      "pretend to be normal",
+      "hide my feelings",
+      "copy others",
+      "camouflag",
+      "act normal"
+    ]
+  },
+  {
+    "id": "routine_dependence",
+    "label": "Needs strict routines / dislikes change",
+    "synonyms": [
+      "routine",
+      "dislike change",
+      "rigid",
+      "need things the same"
+    ]
+  },
+  {
+    "id": "pelvic_pain",
+    "label": "Pelvic pain",
+    "synonyms": [
+      "pelvic pain",
+      "lower abdominal pain",
+      "pain in lower belly"
+    ],
+    "faers_terms": [
+      "PELVIC PAIN"
+    ]
+  },
+  {
+    "id": "painful_periods",
+    "label": "Painful periods",
+    "synonyms": [
+      "painful periods",
+      "period pain",
+      "cramps",
+      "dysmenorrhea",
+      "dysmenorrhoea"
+    ],
+    "faers_terms": [
+      "DYSMENORRHOEA"
+    ]
+  },
+  {
+    "id": "painful_sex",
+    "label": "Pain during sex",
+    "synonyms": [
+      "painful sex",
+      "pain during sex",
+      "pain with sex",
+      "dyspareunia"
+    ],
+    "faers_terms": [
+      "DYSPAREUNIA"
+    ]
+  },
+  {
+    "id": "heavy_periods",
+    "label": "Heavy periods",
+    "synonyms": [
+      "heavy periods",
+      "heavy bleeding",
+      "soaking pads",
+      "flooding"
+    ],
+    "faers_terms": [
+      "MENORRHAGIA"
+    ]
+  },
+  {
+    "id": "irregular_periods",
+    "label": "Irregular or missed periods",
+    "synonyms": [
+      "irregular periods",
+      "missed periods",
+      "no periods",
+      "absent periods"
+    ],
+    "faers_terms": [
+      "MENSTRUAL DISORDER",
+      "AMENORRHOEA",
+      "OLIGOMENORRHOEA"
+    ]
+  },
+  {
+    "id": "bowel_symptoms",
+    "label": "Bowel symptoms (bloating, constipation, pain)",
+    "synonyms": [
+      "painful bowel",
+      "bowel movements hurt",
+      "bloating",
+      "constipation",
+      "bloated",
+      "bloat"
+    ],
+    "faers_terms": [
+      "CONSTIPATION",
+      "ABDOMINAL DISTENSION"
+    ]
+  },
+  {
+    "id": "bladder_symptoms",
+    "label": "Bladder symptoms",
+    "synonyms": [
+      "painful urination",
+      "bladder pain",
+      "frequent urination"
+    ],
+    "faers_terms": [
+      "POLLAKIURIA"
+    ]
+  },
+  {
+    "id": "infertility",
+    "label": "Difficulty conceiving",
+    "synonyms": [
+      "infertility",
+      "cant get pregnant",
+      "trouble conceiving"
+    ]
+  },
+  {
+    "id": "joint_pain",
+    "label": "Joint pain",
+    "synonyms": [
+      "joint pain",
+      "achy joints",
+      "swollen joints",
+      "sore joints",
+      "stiff joints",
+      "joint ache"
+    ],
+    "faers_terms": [
+      "ARTHRALGIA"
+    ]
+  },
+  {
+    "id": "rash",
+    "label": "Skin rash",
+    "synonyms": [
+      "rash",
+      "butterfly rash",
+      "red patches"
+    ],
+    "faers_terms": [
+      "RASH"
+    ]
+  },
+  {
+    "id": "hair_loss",
+    "label": "Hair loss",
+    "synonyms": [
+      "hair loss",
+      "hair thinning",
+      "losing hair"
+    ],
+    "faers_terms": [
+      "ALOPECIA"
+    ]
+  },
+  {
+    "id": "mouth_ulcers",
+    "label": "Mouth ulcers",
+    "synonyms": [
+      "mouth ulcers",
+      "mouth sores",
+      "canker"
+    ],
+    "faers_terms": [
+      "STOMATITIS",
+      "MOUTH ULCERATION"
+    ]
+  },
+  {
+    "id": "photosensitivity",
+    "label": "Sensitive to sunlight",
+    "synonyms": [
+      "sun sensitive",
+      "photosensitive",
+      "sun makes me ill"
+    ],
+    "faers_terms": [
+      "PHOTOSENSITIVITY REACTION"
+    ]
+  },
+  {
+    "id": "fever",
+    "label": "Fever",
+    "synonyms": [
+      "fever",
+      "low grade fever",
+      "temperature"
+    ],
+    "faers_terms": [
+      "PYREXIA"
+    ]
+  },
+  {
+    "id": "weight_gain",
+    "label": "Weight gain",
+    "synonyms": [
+      "weight gain",
+      "gaining weight",
+      "put on weight"
+    ],
+    "faers_terms": [
+      "WEIGHT INCREASED"
+    ]
+  },
+  {
+    "id": "cold_intolerance",
+    "label": "Always feeling cold",
+    "synonyms": [
+      "feel cold",
+      "cold intolerance",
+      "always cold"
+    ],
+    "faers_terms": [
+      "FEELING COLD"
+    ]
+  },
+  {
+    "id": "dry_skin",
+    "label": "Dry skin",
+    "synonyms": [
+      "dry skin"
+    ],
+    "faers_terms": [
+      "DRY SKIN"
+    ]
+  },
+  {
+    "id": "excess_hair",
+    "label": "Excess facial/body hair",
+    "synonyms": [
+      "excess hair",
+      "facial hair",
+      "hirsutism"
+    ],
+    "faers_terms": [
+      "HIRSUTISM"
+    ]
+  },
+  {
+    "id": "acne",
+    "label": "Acne",
+    "synonyms": [
+      "acne",
+      "pimples",
+      "breakouts"
+    ],
+    "faers_terms": [
+      "ACNE"
+    ]
+  },
+  {
+    "id": "pallor",
+    "label": "Looking pale",
+    "synonyms": [
+      "pale",
+      "pallor"
+    ],
+    "faers_terms": [
+      "PALLOR"
+    ]
+  },
+  {
+    "id": "brittle_nails",
+    "label": "Brittle nails",
+    "synonyms": [
+      "brittle nails",
+      "nails break"
+    ],
+    "faers_terms": [
+      "NAIL DISORDER"
+    ]
+  },
+  {
+    "id": "restless_legs",
+    "label": "Restless legs",
+    "synonyms": [
+      "restless legs",
+      "legs twitch at night"
+    ],
+    "faers_terms": [
+      "RESTLESS LEGS SYNDROME"
+    ]
+  },
+  {
+    "id": "insomnia",
+    "label": "Trouble sleeping",
+    "synonyms": [
+      "insomnia",
+      "cant sleep",
+      "trouble sleeping",
+      "wake up at night",
+      "trouble falling asleep",
+      "not sleeping",
+      "poor sleep",
+      "waking up early"
+    ],
+    "faers_terms": [
+      "INSOMNIA"
+    ]
+  },
+  {
+    "id": "somnolence",
+    "label": "Drowsiness",
+    "synonyms": [
+      "drowsy",
+      "drowsiness",
+      "sleepy",
+      "sedated",
+      "daytime sleepiness",
+      "falling asleep during the day"
+    ],
+    "faers_terms": [
+      "SOMNOLENCE",
+      "SEDATION"
+    ]
+  },
+  {
+    "id": "memory_problems",
+    "label": "Memory problems",
+    "synonyms": [
+      "memory loss",
+      "memory problems",
+      "cant remember",
+      "amnesia",
+      "forgetting things"
+    ],
+    "faers_terms": [
+      "AMNESIA",
+      "MEMORY IMPAIRMENT"
+    ]
+  },
+  {
+    "id": "diarrhea",
+    "label": "Diarrhoea",
+    "synonyms": [
+      "diarrhea",
+      "diarrhoea",
+      "loose stools"
+    ],
+    "faers_terms": [
+      "DIARRHOEA"
+    ]
+  },
+  {
+    "id": "stomach_pain",
+    "label": "Stomach pain",
+    "synonyms": [
+      "stomach pain",
+      "abdominal pain",
+      "belly pain",
+      "stomach ache",
+      "tummy ache",
+      "tummy pain",
+      "sore stomach",
+      "belly ache"
+    ],
+    "faers_terms": [
+      "ABDOMINAL PAIN",
+      "ABDOMINAL PAIN UPPER"
+    ]
+  },
+  {
+    "id": "muscle_pain",
+    "label": "Muscle pain",
+    "synonyms": [
+      "muscle pain",
+      "muscle aches",
+      "myalgia",
+      "sore muscles",
+      "body aches",
+      "aching muscles",
+      "muscle soreness",
+      "sore body"
+    ],
+    "faers_terms": [
+      "MYALGIA"
+    ]
+  },
+  {
+    "id": "swelling",
+    "label": "Swollen ankles / swelling",
+    "synonyms": [
+      "swollen ankles",
+      "swelling",
+      "puffy legs",
+      "oedema",
+      "edema",
+      "swollen",
+      "puffy"
+    ],
+    "faers_terms": [
+      "OEDEMA PERIPHERAL",
+      "SWELLING"
+    ]
+  },
+  {
+    "id": "hot_flushes",
+    "label": "Hot flushes / night sweats",
+    "synonyms": [
+      "hot flush",
+      "hot flash",
+      "night sweats",
+      "flushes",
+      "sweats at night"
+    ],
+    "faers_terms": [
+      "HOT FLUSH",
+      "NIGHT SWEATS"
+    ]
+  },
+  {
+    "id": "snoring",
+    "label": "Snoring / pauses in breathing at night",
+    "synonyms": [
+      "snore",
+      "snoring",
+      "stop breathing at night",
+      "gasping at night"
+    ],
+    "faers_terms": [
+      "SNORING"
+    ]
+  }
+]

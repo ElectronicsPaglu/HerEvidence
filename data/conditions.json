@@ -1,0 +1,886 @@
+[
+  {
+    "id": "mi",
+    "name": "Heart attack (myocardial infarction)",
+    "textbook": [
+      "Crushing chest pain",
+      "Pain spreading to the left arm",
+      "Sweating"
+    ],
+    "female": [
+      "May have little or no chest pain",
+      "Jaw, neck or upper-back pain",
+      "Nausea or vomiting",
+      "Shortness of breath",
+      "Unusual fatigue",
+      "Light-headedness"
+    ],
+    "skipped_tests": [
+      "High-sensitivity troponin with sex-specific cut-offs",
+      "Repeat/serial ECG"
+    ],
+    "symptom_weights": {
+      "chest_pain": 3,
+      "shortness_of_breath": 2,
+      "jaw_pain": 2,
+      "back_pain": 1.5,
+      "nausea": 1.5,
+      "fatigue": 1.5,
+      "sweating": 1.5,
+      "dizziness": 1,
+      "arm_pain": 1.5,
+      "neck_pain": 1,
+      "indigestion": 1,
+      "vomiting": 1.5,
+      "stomach_pain": 1
+    },
+    "female_symptom_ids": [
+      "jaw_pain",
+      "back_pain",
+      "nausea",
+      "fatigue",
+      "shortness_of_breath",
+      "dizziness",
+      "neck_pain",
+      "indigestion",
+      "vomiting"
+    ],
+    "sources": [
+      "https://news.yale.edu/2018/02/19/heart-attack-symptoms-often-misinterpreted-younger-women",
+      "https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack/heart-attack-symptoms-in-women"
+    ],
+    "why_missed": "Symptoms in women, especially younger women, are more often attributed to non-cardiac causes.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "stroke",
+    "name": "Stroke",
+    "textbook": [
+      "Face drooping",
+      "Arm weakness",
+      "Speech difficulty"
+    ],
+    "female": [
+      "Non-classic symptoms such as confusion, headache, nausea or general weakness",
+      "Fatigue or fainting"
+    ],
+    "skipped_tests": [
+      "Urgent brain imaging (CT/MRI)",
+      "Stroke assessment even without classic signs"
+    ],
+    "symptom_weights": {
+      "face_droop": 3,
+      "arm_weakness": 3,
+      "speech_difficulty": 3,
+      "sudden_numbness": 2,
+      "confusion": 2,
+      "headache": 1,
+      "vision_problems": 1.5,
+      "balance_problems": 1.5,
+      "nausea": 1,
+      "fatigue": 1,
+      "dizziness": 1,
+      "vomiting": 1
+    },
+    "female_symptom_ids": [
+      "confusion",
+      "headache",
+      "nausea",
+      "fatigue",
+      "dizziness",
+      "vomiting"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/stroke/"
+    ],
+    "why_missed": "Women may more often present without the classic signs, which can delay assessment.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "adhd",
+    "name": "ADHD (inattentive presentation)",
+    "textbook": [
+      "Hyperactivity",
+      "Disruptive behaviour",
+      "Impulsivity (classically described in boys)"
+    ],
+    "female": [
+      "Inattention, daydreaming, disorganisation",
+      "Internal restlessness",
+      "Anxiety, low mood, emotional overwhelm",
+      "Burnout or exhaustion from compensating"
+    ],
+    "skipped_tests": [
+      "Structured adult/child ADHD assessment (e.g. DIVA-5, ASRS)",
+      "Review of childhood history",
+      "Screening for inattentive-type presentation"
+    ],
+    "symptom_weights": {
+      "inattention": 3,
+      "disorganization": 2.5,
+      "restlessness": 1.5,
+      "impulsivity": 1,
+      "emotional_dysregulation": 2,
+      "anxiety": 1.5,
+      "low_mood": 1,
+      "fatigue": 1,
+      "insomnia": 1,
+      "memory_problems": 1
+    },
+    "female_symptom_ids": [
+      "inattention",
+      "disorganization",
+      "anxiety",
+      "emotional_dysregulation",
+      "fatigue"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/"
+    ],
+    "why_missed": "Often mistaken for anxiety or depression; diagnosed later in girls and women.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "autism",
+    "name": "Autism (often under-recognised in women)",
+    "textbook": [
+      "Visible social-communication difficulty",
+      "Repetitive behaviours",
+      "Restricted interests"
+    ],
+    "female": [
+      "Masking / camouflaging",
+      "Social exhaustion",
+      "Sensory sensitivities",
+      "Distress turned inward (anxiety, low mood)"
+    ],
+    "skipped_tests": [
+      "Specialist autism assessment using tools validated for women",
+      "Review of developmental history"
+    ],
+    "symptom_weights": {
+      "masking": 3,
+      "social_exhaustion": 2.5,
+      "sensory_sensitivity": 2.5,
+      "routine_dependence": 2,
+      "anxiety": 1.5,
+      "low_mood": 1,
+      "fatigue": 1,
+      "emotional_dysregulation": 1,
+      "insomnia": 0.5
+    },
+    "female_symptom_ids": [
+      "masking",
+      "social_exhaustion",
+      "anxiety",
+      "low_mood"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/autism/"
+    ],
+    "why_missed": "Camouflaging can hide traits, and distress is often labelled as anxiety or depression.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "endometriosis",
+    "name": "Endometriosis",
+    "textbook": [
+      "Painful periods"
+    ],
+    "female": [
+      "Chronic pelvic pain",
+      "Pain during sex",
+      "Bowel or bladder symptoms around periods",
+      "Fatigue",
+      "Difficulty conceiving"
+    ],
+    "skipped_tests": [
+      "Transvaginal or pelvic ultrasound by an experienced operator",
+      "Pelvic MRI",
+      "Referral to a specialist (laparoscopy considered)"
+    ],
+    "symptom_weights": {
+      "painful_periods": 2.5,
+      "pelvic_pain": 3,
+      "painful_sex": 2.5,
+      "bowel_symptoms": 2,
+      "bladder_symptoms": 1.5,
+      "infertility": 2,
+      "fatigue": 1.5,
+      "heavy_periods": 1.5,
+      "back_pain": 0.5,
+      "stomach_pain": 1.5,
+      "nausea": 1,
+      "diarrhea": 1
+    },
+    "female_symptom_ids": [
+      "pelvic_pain",
+      "painful_sex",
+      "bowel_symptoms",
+      "bladder_symptoms",
+      "infertility",
+      "fatigue"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/endometriosis/"
+    ],
+    "why_missed": "Pain is often normalised as 'bad periods', contributing to long diagnostic delays.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "lupus",
+    "name": "Lupus (systemic lupus erythematosus)",
+    "textbook": [
+      "Butterfly-shaped facial rash",
+      "Joint pain"
+    ],
+    "female": [
+      "Persistent fatigue",
+      "Joint pain and swelling",
+      "Low-grade fever",
+      "Hair loss and mouth ulcers",
+      "Sun sensitivity"
+    ],
+    "skipped_tests": [
+      "ANA blood test",
+      "Anti-dsDNA and complement levels",
+      "Urine test for kidney involvement"
+    ],
+    "symptom_weights": {
+      "fatigue": 2,
+      "joint_pain": 2.5,
+      "rash": 2.5,
+      "fever": 1.5,
+      "hair_loss": 1.5,
+      "mouth_ulcers": 2,
+      "photosensitivity": 2.5,
+      "chest_pain": 0.5,
+      "muscle_pain": 1.5,
+      "swelling": 1,
+      "headache": 0.5
+    },
+    "female_symptom_ids": [
+      "fatigue",
+      "joint_pain",
+      "hair_loss",
+      "mouth_ulcers",
+      "photosensitivity"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/lupus/"
+    ],
+    "why_missed": "Vague, fluctuating symptoms are easily attributed to stress or other causes.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "pcos",
+    "name": "Polycystic ovary syndrome (PCOS)",
+    "textbook": [
+      "Irregular periods",
+      "Excess hair growth"
+    ],
+    "female": [
+      "Irregular or absent periods",
+      "Acne",
+      "Excess facial/body hair",
+      "Weight gain",
+      "Hair thinning",
+      "Difficulty conceiving",
+      "Low mood or anxiety"
+    ],
+    "skipped_tests": [
+      "Hormone blood tests (e.g. testosterone, SHBG)",
+      "Pelvic ultrasound",
+      "Glucose / HbA1c screening"
+    ],
+    "symptom_weights": {
+      "irregular_periods": 3,
+      "excess_hair": 2.5,
+      "acne": 2,
+      "weight_gain": 1.5,
+      "hair_loss": 1,
+      "infertility": 2,
+      "low_mood": 0.5,
+      "anxiety": 0.5,
+      "fatigue": 0.5
+    },
+    "female_symptom_ids": [
+      "irregular_periods",
+      "acne",
+      "excess_hair",
+      "weight_gain",
+      "infertility"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/",
+      "https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome"
+    ],
+    "why_missed": "Individual symptoms are often treated separately without connecting them.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "hypothyroid",
+    "name": "Underactive thyroid (hypothyroidism)",
+    "textbook": [
+      "Tiredness",
+      "Weight gain",
+      "Feeling cold"
+    ],
+    "female": [
+      "Fatigue",
+      "Hair loss",
+      "Heavy or irregular periods",
+      "Low mood",
+      "Dry skin",
+      "Memory fog"
+    ],
+    "skipped_tests": [
+      "TSH",
+      "Free T4",
+      "Thyroid antibodies (TPO)"
+    ],
+    "symptom_weights": {
+      "fatigue": 2,
+      "weight_gain": 1.5,
+      "cold_intolerance": 2.5,
+      "dry_skin": 2,
+      "hair_loss": 1.5,
+      "heavy_periods": 1.5,
+      "irregular_periods": 1,
+      "low_mood": 1.5,
+      "memory_problems": 1,
+      "inattention": 1,
+      "muscle_pain": 1,
+      "bowel_symptoms": 1.5,
+      "somnolence": 1,
+      "swelling": 1
+    },
+    "female_symptom_ids": [
+      "fatigue",
+      "hair_loss",
+      "heavy_periods",
+      "low_mood",
+      "memory_problems"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/"
+    ],
+    "why_missed": "Symptoms overlap with stress, depression and perimenopause.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "iron_def",
+    "name": "Iron deficiency / anaemia",
+    "textbook": [
+      "Tiredness",
+      "Pale skin"
+    ],
+    "female": [
+      "Fatigue",
+      "Hair loss",
+      "Brittle nails",
+      "Restless legs",
+      "Breathlessness on exertion",
+      "Heavy periods as a common cause"
+    ],
+    "skipped_tests": [
+      "Ferritin (not only haemoglobin)",
+      "Transferrin saturation",
+      "Full blood count"
+    ],
+    "symptom_weights": {
+      "fatigue": 2,
+      "pallor": 2,
+      "hair_loss": 1.5,
+      "brittle_nails": 2,
+      "restless_legs": 2,
+      "shortness_of_breath": 1,
+      "heavy_periods": 2.5,
+      "dizziness": 1,
+      "palpitations": 1,
+      "inattention": 0.5,
+      "headache": 1,
+      "low_mood": 0.5,
+      "memory_problems": 0.5
+    },
+    "female_symptom_ids": [
+      "fatigue",
+      "hair_loss",
+      "brittle_nails",
+      "restless_legs",
+      "heavy_periods"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/iron-deficiency-anaemia/"
+    ],
+    "why_missed": "Iron can be low before haemoglobin falls, so basic blood counts can look 'normal'.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "perimenopause",
+    "name": "Perimenopause / menopause",
+    "textbook": [
+      "Hot flushes",
+      "Periods becoming irregular or stopping"
+    ],
+    "female": [
+      "Brain fog, low mood, anxiety or irritability",
+      "Sleep problems and night sweats",
+      "Heart palpitations",
+      "Joint aches",
+      "Can begin in the 40s, sometimes earlier than people expect"
+    ],
+    "skipped_tests": [
+      "A conversation about perimenopause based on your symptoms and age",
+      "Thyroid blood test (TSH) to rule out other causes"
+    ],
+    "symptom_weights": {
+      "hot_flushes": 3,
+      "irregular_periods": 2.5,
+      "insomnia": 2,
+      "low_mood": 1.5,
+      "anxiety": 1.5,
+      "emotional_dysregulation": 1.5,
+      "inattention": 1.5,
+      "memory_problems": 1,
+      "fatigue": 1.5,
+      "palpitations": 1,
+      "painful_sex": 1.5,
+      "joint_pain": 1,
+      "heavy_periods": 1.5,
+      "headache": 0.5
+    },
+    "female_symptom_ids": [
+      "insomnia",
+      "low_mood",
+      "anxiety",
+      "emotional_dysregulation",
+      "inattention",
+      "memory_problems",
+      "palpitations",
+      "joint_pain",
+      "painful_sex"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/menopause/"
+    ],
+    "why_missed": "Mood, sleep and memory symptoms are often put down to stress or depression, and the change can start earlier than many people expect.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "ibs",
+    "name": "Irritable bowel syndrome (IBS)",
+    "textbook": [
+      "Tummy pain or cramps",
+      "Bloating",
+      "Diarrhoea or constipation"
+    ],
+    "female": [
+      "Symptoms may flare around periods",
+      "Tiredness and backache alongside gut symptoms",
+      "Nausea",
+      "Often overlaps with anxiety or low mood"
+    ],
+    "skipped_tests": [
+      "Coeliac blood test to rule out coeliac disease",
+      "Blood tests and a stool test for inflammation to rule out other causes"
+    ],
+    "symptom_weights": {
+      "stomach_pain": 2.5,
+      "bowel_symptoms": 2.5,
+      "diarrhea": 2,
+      "fatigue": 1,
+      "nausea": 1,
+      "back_pain": 0.5,
+      "anxiety": 0.5,
+      "indigestion": 0.5,
+      "bladder_symptoms": 0.5
+    },
+    "female_symptom_ids": [
+      "fatigue",
+      "nausea",
+      "back_pain",
+      "anxiety",
+      "bladder_symptoms"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/irritable-bowel-syndrome-ibs/"
+    ],
+    "why_missed": "Often dismissed as stress or a 'sensitive stomach', and it can overlap with other conditions such as endometriosis or coeliac disease.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "coeliac",
+    "name": "Coeliac disease",
+    "textbook": [
+      "Diarrhoea",
+      "Bloating",
+      "Weight loss"
+    ],
+    "female": [
+      "Tiredness or low iron without obvious gut symptoms",
+      "Mouth ulcers",
+      "Skin rash",
+      "Headaches",
+      "Joint pain"
+    ],
+    "skipped_tests": [
+      "Coeliac blood test (tTG-IgA) while still eating gluten",
+      "Full blood count and ferritin"
+    ],
+    "symptom_weights": {
+      "diarrhea": 2.5,
+      "bowel_symptoms": 2,
+      "stomach_pain": 1.5,
+      "fatigue": 2,
+      "nausea": 1,
+      "mouth_ulcers": 1.5,
+      "rash": 1.5,
+      "joint_pain": 1,
+      "headache": 1,
+      "pallor": 0.5,
+      "low_mood": 0.5
+    },
+    "female_symptom_ids": [
+      "fatigue",
+      "mouth_ulcers",
+      "rash",
+      "headache",
+      "joint_pain",
+      "low_mood"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/coeliac-disease/"
+    ],
+    "why_missed": "Symptoms can be mild or outside the gut (such as tiredness or low iron), so it is often mistaken for IBS or stress.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "fibromyalgia",
+    "name": "Fibromyalgia",
+    "textbook": [
+      "Widespread pain",
+      "Extreme sensitivity to touch"
+    ],
+    "female": [
+      "Fatigue and unrefreshing sleep",
+      "'Fibro fog': trouble concentrating or remembering",
+      "Headaches",
+      "Bowel or bladder symptoms",
+      "Low mood or anxiety"
+    ],
+    "skipped_tests": [
+      "Assessment against widespread-pain diagnostic criteria",
+      "Thyroid and inflammation blood tests to rule out other causes"
+    ],
+    "symptom_weights": {
+      "muscle_pain": 3,
+      "fatigue": 2.5,
+      "insomnia": 2,
+      "inattention": 1.5,
+      "memory_problems": 1.5,
+      "headache": 1.5,
+      "joint_pain": 1.5,
+      "bowel_symptoms": 1,
+      "low_mood": 1,
+      "anxiety": 1,
+      "sensory_sensitivity": 1,
+      "painful_periods": 0.5,
+      "bladder_symptoms": 0.5
+    },
+    "female_symptom_ids": [
+      "fatigue",
+      "insomnia",
+      "inattention",
+      "memory_problems",
+      "headache",
+      "bowel_symptoms"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/fibromyalgia/"
+    ],
+    "why_missed": "There is no single test, so diagnosis is often slow and pain can be dismissed as stress or low mood.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "migraine",
+    "name": "Migraine",
+    "textbook": [
+      "Severe, throbbing headache, often on one side"
+    ],
+    "female": [
+      "Headaches linked to periods or hormonal changes",
+      "Nausea and vomiting",
+      "Sensitivity to light and sound",
+      "Visual disturbances (aura)",
+      "Dizziness or tiredness"
+    ],
+    "skipped_tests": [
+      "Headache diary that also tracks your menstrual cycle",
+      "Review of triggers and current medicines"
+    ],
+    "symptom_weights": {
+      "headache": 3,
+      "nausea": 2,
+      "vomiting": 2,
+      "vision_problems": 2,
+      "sensory_sensitivity": 2,
+      "dizziness": 1,
+      "fatigue": 1,
+      "neck_pain": 1
+    },
+    "female_symptom_ids": [
+      "nausea",
+      "vomiting",
+      "vision_problems",
+      "dizziness",
+      "fatigue",
+      "sensory_sensitivity"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/migraine/"
+    ],
+    "why_missed": "Often dismissed as 'just a headache' or stress, and any link with the menstrual cycle is not always explored.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "depression",
+    "name": "Depression",
+    "textbook": [
+      "Persistent sadness or low mood",
+      "Loss of interest in things"
+    ],
+    "female": [
+      "Tiredness, poor sleep or changes in appetite",
+      "Irritability or feeling overwhelmed",
+      "Trouble concentrating",
+      "Aches and pains with no clear cause"
+    ],
+    "skipped_tests": [
+      "Structured screening such as PHQ-9",
+      "Blood tests to rule out physical contributors such as thyroid or iron problems"
+    ],
+    "symptom_weights": {
+      "low_mood": 3,
+      "fatigue": 2,
+      "insomnia": 1.5,
+      "somnolence": 1,
+      "inattention": 1.5,
+      "anxiety": 1.5,
+      "memory_problems": 1,
+      "emotional_dysregulation": 1.5,
+      "muscle_pain": 0.5,
+      "headache": 0.5,
+      "weight_gain": 0.5
+    },
+    "female_symptom_ids": [
+      "fatigue",
+      "insomnia",
+      "inattention",
+      "anxiety",
+      "emotional_dysregulation",
+      "muscle_pain"
+    ],
+    "sources": [
+      "https://www.nhs.uk/mental-health/conditions/clinical-depression/"
+    ],
+    "why_missed": "Can show up as tiredness, irritability or physical aches rather than sadness, and thyroid or iron problems can look similar.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "sleep_apnoea",
+    "name": "Sleep apnoea",
+    "textbook": [
+      "Loud snoring",
+      "Pauses in breathing during sleep",
+      "Daytime sleepiness"
+    ],
+    "female": [
+      "Insomnia or restless sleep rather than loud snoring",
+      "Morning headaches",
+      "Low mood, anxiety or tiredness",
+      "Trouble concentrating"
+    ],
+    "skipped_tests": [
+      "Sleep study (home or overnight)",
+      "Questionnaire on daytime sleepiness and sleep-related breathing"
+    ],
+    "symptom_weights": {
+      "somnolence": 2.5,
+      "fatigue": 2,
+      "snoring": 2.5,
+      "insomnia": 2,
+      "headache": 1.5,
+      "low_mood": 1.5,
+      "inattention": 1.5,
+      "memory_problems": 1,
+      "anxiety": 0.5,
+      "palpitations": 0.5,
+      "weight_gain": 0.5
+    },
+    "female_symptom_ids": [
+      "insomnia",
+      "headache",
+      "low_mood",
+      "fatigue",
+      "inattention",
+      "anxiety"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/sleep-apnoea/"
+    ],
+    "why_missed": "Women more often report insomnia, tiredness or low mood than loud snoring, so it can be mistaken for depression or anxiety.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "gallstones",
+    "name": "Gallstones / gallbladder problems",
+    "textbook": [
+      "Sudden, severe pain in the upper right tummy"
+    ],
+    "female": [
+      "Pain spreading to the back or shoulder blade",
+      "Nausea and vomiting",
+      "Indigestion-like discomfort, often after meals"
+    ],
+    "skipped_tests": [
+      "Abdominal ultrasound",
+      "Liver function blood tests"
+    ],
+    "symptom_weights": {
+      "stomach_pain": 3,
+      "nausea": 2,
+      "vomiting": 2,
+      "back_pain": 1.5,
+      "indigestion": 1.5,
+      "fever": 1,
+      "diarrhea": 0.5
+    },
+    "female_symptom_ids": [
+      "back_pain",
+      "nausea",
+      "vomiting",
+      "indigestion"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/gallstones/"
+    ],
+    "why_missed": "Pain can feel like indigestion or heartburn and can show up in the back or shoulder blade, so it is easy to put down to something else.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "bladder_pain",
+    "name": "Bladder pain syndrome (interstitial cystitis)",
+    "textbook": [
+      "Recurring 'cystitis' treated with antibiotics"
+    ],
+    "female": [
+      "Pelvic or lower tummy pain, often worse when the bladder is full",
+      "Needing to pee often or urgently, including at night",
+      "Pain during sex",
+      "Symptoms despite clear urine tests"
+    ],
+    "skipped_tests": [
+      "Urine culture to rule out infection",
+      "Referral to urology or gynaecology for specialist assessment"
+    ],
+    "symptom_weights": {
+      "bladder_symptoms": 3,
+      "pelvic_pain": 2.5,
+      "painful_sex": 1.5,
+      "stomach_pain": 1,
+      "back_pain": 1,
+      "painful_periods": 0.5,
+      "fatigue": 0.5,
+      "bowel_symptoms": 0.5
+    },
+    "female_symptom_ids": [
+      "pelvic_pain",
+      "painful_sex",
+      "bladder_symptoms"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/interstitial-cystitis"
+    ],
+    "why_missed": "Often treated as repeated urine infections even when urine tests are clear, which can delay the right diagnosis.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "rheumatoid",
+    "name": "Rheumatoid arthritis",
+    "textbook": [
+      "Painful, swollen joints, often worse in the morning"
+    ],
+    "female": [
+      "Tiredness and feeling generally unwell",
+      "Low-grade fever",
+      "Aches that come and go at first"
+    ],
+    "skipped_tests": [
+      "Rheumatoid factor and anti-CCP blood tests",
+      "CRP / ESR inflammation markers",
+      "Referral to a rheumatologist"
+    ],
+    "symptom_weights": {
+      "joint_pain": 3,
+      "swelling": 2.5,
+      "fatigue": 2,
+      "fever": 1,
+      "muscle_pain": 1,
+      "pallor": 0.5
+    },
+    "female_symptom_ids": [
+      "fatigue",
+      "fever",
+      "muscle_pain"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/rheumatoid-arthritis/"
+    ],
+    "why_missed": "Early symptoms can be vague or come and go, so they are often put down to overuse or stress.",
+    "verification_status": "needs_review"
+  },
+  {
+    "id": "pots",
+    "name": "Postural tachycardia syndrome (PoTS)",
+    "textbook": [
+      "Heart rate rising quickly on standing"
+    ],
+    "female": [
+      "Dizziness or fainting on standing",
+      "Palpitations",
+      "Tiredness and brain fog",
+      "Nausea and bowel symptoms",
+      "Often mistaken for anxiety"
+    ],
+    "skipped_tests": [
+      "Lying and standing heart rate and blood pressure check",
+      "Blood tests to rule out anaemia and thyroid problems"
+    ],
+    "symptom_weights": {
+      "dizziness": 3,
+      "palpitations": 3,
+      "fatigue": 2,
+      "inattention": 1.5,
+      "nausea": 1.5,
+      "headache": 1,
+      "sweating": 1,
+      "shortness_of_breath": 1,
+      "bowel_symptoms": 1
+    },
+    "female_symptom_ids": [
+      "dizziness",
+      "palpitations",
+      "fatigue",
+      "inattention",
+      "nausea",
+      "bowel_symptoms"
+    ],
+    "sources": [
+      "https://www.nhs.uk/conditions/postural-tachycardia-syndrome/",
+      "https://bmjopen.bmj.com/content/4/6/e004127"
+    ],
+    "why_missed": "Symptoms resemble anxiety and other conditions, and diagnosis can take time. A UK study found most people with PoTS were young women.",
+    "verification_status": "needs_review"
+  }
+]

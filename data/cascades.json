@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ccb_diuretic",
+    "trigger_terms": [
+      "amlodipine",
+      "calcium channel blocker",
+      "nifedipine",
+      "felodipine"
+    ],
+    "follow_on_terms": [
+      "furosemide",
+      "torsemide",
+      "bumetanide",
+      "loop diuretic"
+    ],
+    "description": "A calcium-channel blocker can cause ankle swelling, which may be mistaken for a new problem and treated with a diuretic.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/?term=prescribing+cascade+calcium+channel+blocker+loop+diuretic"
+    ]
+  },
+  {
+    "id": "nsaid_bp",
+    "trigger_terms": [
+      "ibuprofen",
+      "naproxen",
+      "diclofenac",
+      "nsaid"
+    ],
+    "follow_on_terms": [
+      "amlodipine",
+      "lisinopril",
+      "enalapril",
+      "ramipril",
+      "losartan",
+      "antihypertensive"
+    ],
+    "description": "NSAIDs can raise blood pressure, which may then be treated with a blood-pressure medicine.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/?term=prescribing+cascade+NSAID+antihypertensive"
+    ]
+  },
+  {
+    "id": "metoclopramide_levodopa",
+    "trigger_terms": [
+      "metoclopramide"
+    ],
+    "follow_on_terms": [
+      "levodopa",
+      "carbidopa"
+    ],
+    "description": "Metoclopramide can cause parkinsonism-like symptoms that may be mistaken for Parkinson's disease.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/?term=prescribing+cascade+metoclopramide+parkinsonism"
+    ]
+  },
+  {
+    "id": "chei_anticholinergic",
+    "trigger_terms": [
+      "donepezil",
+      "rivastigmine",
+      "galantamine"
+    ],
+    "follow_on_terms": [
+      "oxybutynin",
+      "tolterodine",
+      "solifenacin"
+    ],
+    "description": "Cholinesterase inhibitors can cause urinary urgency, which may be treated with a bladder anticholinergic.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/?term=prescribing+cascade+cholinesterase+inhibitor+anticholinergic"
+    ]
+  },
+  {
+    "id": "steroid_diabetes",
+    "trigger_terms": [
+      "prednisolone",
+      "prednisone",
+      "dexamethasone",
+      "corticosteroid"
+    ],
+    "follow_on_terms": [
+      "metformin",
+      "insulin",
+      "gliclazide",
+      "glipizide"
+    ],
+    "description": "Corticosteroids can raise blood sugar, which may then be treated with diabetes medicines.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/?term=prescribing+cascade+corticosteroid+hyperglycemia"
+    ]
+  }
+]
